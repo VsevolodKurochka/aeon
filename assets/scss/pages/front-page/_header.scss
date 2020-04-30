@@ -1,0 +1,10 @@
+.front-page {
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+    padding-bottom: 30px;
+    @include bgi('../img/bg-front-page.jpg');
+  }
+}
