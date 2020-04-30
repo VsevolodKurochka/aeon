@@ -79,6 +79,44 @@
     #{$root}.active & {
       transform: none;
     }
+    &-content {
+      padding: 15px;
+      @include media-breakpoint-up($nav-media-change) {
+        padding: 30px;
+      }
+      &-header {
+        text-align: center;
+        margin-bottom: 45px;
+        &-title {
+          font-weight: $semi;
+          font-size: 17px;
+          text-transform: uppercase;
+        }
+      }
+      &-list {
+        justify-content: center;
+        &-item {
+          font-size: 12px;
+          @include media-breakpoint-up(xlg) {
+            font-size: 16px;
+          }
+          &-image {
+            display: block;
+            @include size(110px, 60px);
+            object-fit: cover;
+            margin-bottom: 10px;
+          }
+          &-title {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+          }
+          &-count {
+            font-weight: $bold;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
 
   &__links {
@@ -105,7 +143,7 @@
     }
     a {
       @include linkEffect(14px);
-      font-weight: 600;
+      font-weight: $semi;
     }
   }
 }
