@@ -4596,7 +4596,9 @@ input[type="radio"].visually-hidden {
         text-transform: uppercase; }
     .page-nav__body-content-list {
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+      padding-left: 30px;
+      padding-right: 30px; }
       .page-nav__body-content-list-item {
         font-size: 12px; }
         @media (min-width: 1600px) {

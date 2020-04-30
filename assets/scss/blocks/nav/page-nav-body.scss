@@ -32,6 +32,8 @@
       }
       &-list {
         justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
         &-item {
           font-size: 12px;
           @include media-breakpoint-up(xlg) {
