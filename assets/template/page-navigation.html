@@ -110,7 +110,15 @@
                             "componentClass": "page-nav__footer-contact-info"
                         })
                     </div>
-                    <div class="col-8"></div>
+                    <div class="col-8">
+                        @@include('components/subscribe-form.html', {
+                            "componentClass": "page-nav__footer-subscribe-form",
+                            "title": "МЫ ПОМОЖЕМ БЫСТРЕЕ НАЙТИ ТО, ЧТО ВАМ НУЖНО!",
+                            "placeholder": "Ваш телефон",
+                            "type": "phone",
+                            "buttonText": "ОТПРАВИТЬ"
+                        })
+                    </div>
                 </div>
             </div>
         </div>

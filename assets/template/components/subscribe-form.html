@@ -1,0 +1,19 @@
+<div class="subscribe-form @@if (componentClass) {@@componentClass}">
+    <p class="subscribe-form__title">@@title</p>
+    <div class="subscribe-form__body">
+        <form class="form form-validate">
+            <div class="form__group">
+                <input
+                    placeholder="@@placeholder"
+                    type="@@type"
+                    class="form__control">
+            </div>
+            <label class="form-checkbox">
+                <input type="checkbox" value="" class="agree-checkbox">
+                <div class="form-checkbox__indicator"></div>
+                <p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
+            </label>
+            <button type="submit" class="btn btn_border-brand-1">@@buttonText</button>
+        </form>
+    </div>
+</div>

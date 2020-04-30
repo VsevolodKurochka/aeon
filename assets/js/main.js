@@ -346,18 +346,18 @@ $(window).on('scroll load orientationchange', function() {
 
 $('.agree-checkbox').each(function() {
 	var thisCheckbox = $(this);
-	var thisButton = $(this).parents('form').find('button[type="submit"]');
+	var thisButton = $(this).closest('form').find('[type="submit"]');
 	
 	$(thisCheckbox).on('change', function() {
 		if (!$(thisCheckbox).is(':checked')) {
-			$(thisButton).addClass('disabled');
+			$(thisButton).attr('disabled', 'disabled');
 		} else {
-			$(thisButton).removeClass('disabled');
+			$(thisButton).removeAttr('disabled');
 		}
 	});
 	
 	if (!$(thisCheckbox).is(':checked')) {
-		$(thisButton).addClass('disabled');
+		$(thisButton).attr('disabled', 'disabled');
 	}
 });
 
