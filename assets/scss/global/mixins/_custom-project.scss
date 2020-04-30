@@ -65,3 +65,37 @@
   background: url("#{$url}") $position $repeat;
   background-size: $size;
 }
+
+@mixin linkEffect($font-size) {
+  @include pos-r();
+  @include transition();
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-bottom: 2px;
+  font-size: $font-size;
+  color: $black;
+  &:before {
+    @include pos-a(null, null, 0, 50%);
+    @include size(40px, 2px);
+    @include transition();
+    content: '';
+    transform: scaleX(0);
+    background-color: $brand-color;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: -20px;
+  }
+  &:hover {
+    text-decoration: none;
+    color: $black;
+    &:before {
+      opacity: 1;
+      visibility: visible;
+      transform: scaleX(1);
+    }
+  }
+  &:active {
+    color: $brand-color;
+  }
+}

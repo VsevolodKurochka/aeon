@@ -71,12 +71,41 @@
     background-color: $white;
     transform: translateY(-100%);
     z-index: 100;
+    overflow-y: auto;
     @include media-breakpoint-up($nav-media-change) {
       transform: translateX(-100%);
       padding-left: $navigation-width;
     }
     #{$root}.active & {
       transform: none;
+    }
+  }
+
+  &__links {
+    padding: 10px 0 10px 0;
+    margin-bottom: 0;
+    background-color: $gray;
+    text-align: center;
+    li {
+      @include pos-r();
+      display: inline-block;
+      vertical-align: middle;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      &:not(:last-child) {
+        margin-right: 30px;
+        padding-right: 30px;
+        &:before {
+          content: '';
+          @include pos-a(0, 0);
+          @include size(2px, 100%);
+          background-color: $black;
+        }
+      }
+    }
+    a {
+      @include linkEffect(14px);
+      font-weight: 600;
     }
   }
 }

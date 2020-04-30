@@ -30,37 +30,7 @@
         }
       }
       &-link {
-        @include pos-r();
-        @include transition();
-        display: inline-block;
-        text-decoration: none;
-        color: $black;
-        text-transform: uppercase;
-        font-size: 13px;
-        padding-bottom: 2px;
-        &:before {
-          @include pos-a(null, null, 0, 50%);
-          @include size(40px, 2px);
-          @include transition();
-          content: '';
-          transform: scaleX(0);
-          background-color: $brand-color;
-          opacity: 0;
-          visibility: hidden;
-          margin-left: -20px;
-        }
-        &:hover {
-          text-decoration: none;
-          color: $black;
-          &:before {
-            opacity: 1;
-            visibility: visible;
-            transform: scaleX(1);
-          }
-        }
-        &:active {
-          color: $brand-color;
-        }
+        @include linkEffect(13px);
       }
     }
   }
