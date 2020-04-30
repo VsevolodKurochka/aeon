@@ -4429,6 +4429,65 @@ input[type="radio"].visually-hidden {
 .page-nav__panel .page-nav__link:not(:last-child) {
   margin-bottom: 15px; }
 
+.page-nav__hamburger {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all ease-in-out 0.25s;
+  width: 47px;
+  height: 47px;
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  background-color: #000;
+  overflow: hidden;
+  border-radius: 100%; }
+  @media (min-width: 768px) {
+    .page-nav__hamburger {
+      margin-bottom: 15px; } }
+  .page-nav__hamburger.active, .page-nav__hamburger:hover {
+    background-color: #2EBCE9; }
+  .page-nav__hamburger span {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all ease-in-out 0.25s; }
+  .page-nav__hamburger span {
+    left: 12px; }
+    .page-nav__hamburger span:nth-child(1) {
+      top: 14px; }
+    .page-nav__hamburger span:nth-child(2), .page-nav__hamburger span:nth-child(3) {
+      top: 22px;
+      width: 15px; }
+    .page-nav__hamburger span:nth-child(4) {
+      top: 30px; }
+  .page-nav__hamburger.active span:nth-child(1) {
+    top: 14px;
+    width: 0;
+    left: 50%; }
+  .page-nav__hamburger.active span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .page-nav__hamburger.active span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .page-nav__hamburger.active span:nth-child(2), .page-nav__hamburger.active span:nth-child(3) {
+    left: 12px;
+    width: 22px; }
+  .page-nav__hamburger.active span:nth-child(4) {
+    top: 30px;
+    width: 0;
+    left: 50%; }
+
 .page-nav__body {
   position: absolute;
   top: 0;
@@ -4539,64 +4598,32 @@ input[type="radio"].visually-hidden {
     .page-nav__links a:active {
       color: #2EBCE9; }
 
-.page-nav__hamburger {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  transition: all ease-in-out 0.25s;
-  width: 47px;
-  height: 47px;
-  padding: 0;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  -webkit-tap-highlight-color: transparent;
-  cursor: pointer;
-  z-index: 100;
-  background-color: #000;
-  overflow: hidden;
-  border-radius: 100%; }
-  @media (min-width: 768px) {
-    .page-nav__hamburger {
-      margin-bottom: 15px; } }
-  .page-nav__hamburger.active, .page-nav__hamburger:hover {
-    background-color: #2EBCE9; }
-  .page-nav__hamburger span {
-    display: block;
-    position: absolute;
-    width: 22px;
-    height: 3px;
-    background-color: #fff;
-    border-radius: 3px;
-    transition: all ease-in-out 0.25s; }
-  .page-nav__hamburger span {
-    left: 12px; }
-    .page-nav__hamburger span:nth-child(1) {
-      top: 14px; }
-    .page-nav__hamburger span:nth-child(2), .page-nav__hamburger span:nth-child(3) {
-      top: 22px;
-      width: 15px; }
-    .page-nav__hamburger span:nth-child(4) {
-      top: 30px; }
-  .page-nav__hamburger.active span:nth-child(1) {
-    top: 14px;
-    width: 0;
-    left: 50%; }
-  .page-nav__hamburger.active span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
-  .page-nav__hamburger.active span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg); }
-  .page-nav__hamburger.active span:nth-child(2), .page-nav__hamburger.active span:nth-child(3) {
-    left: 12px;
-    width: 22px; }
-  .page-nav__hamburger.active span:nth-child(4) {
-    top: 30px;
-    width: 0;
-    left: 50%; }
+.page-nav__footer {
+  padding: 30px; }
+  .page-nav__footer-contact-info {
+    display: -ms-flexbox;
+    display: flex; }
+    .page-nav__footer-contact-info .contact-info__title {
+      margin-right: 40px; }
+
+.contact-info__title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.contact-info__link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  transition: all 0.3s ease; }
+  .contact-info__link_phone {
+    font-weight: 600; }
+  .contact-info__link_email {
+    color: #2EBCE9; }
+  .contact-info__link:hover {
+    text-decoration: none;
+    color: #16a2ce; }
 
 .front-page__header {
   display: -ms-flexbox;

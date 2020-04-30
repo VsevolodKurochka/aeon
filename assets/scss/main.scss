@@ -26,8 +26,14 @@
 @import "blocks/nav/page-nav";
 @import "blocks/nav/page-nav-hamburger-effect";
 @import "blocks/nav/page-nav-hamburger";
+@import "blocks/nav/page-nav-body";
+@import "blocks/nav/page-nav-links";
+@import "blocks/nav/page-nav-footer";
 
 @import "blocks/page-footer";
+
+// Components
+@import "components/contact-info";
 
 // Pages
 @import "pages/front-page/header";

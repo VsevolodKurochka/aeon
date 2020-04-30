@@ -34,7 +34,7 @@
     <div class="page-nav__body">
         <div class="page-nav__content page-nav__content_desktop">
             @@include('page-header.html', {
-                "pageHeaderClass": "page-nav__header"
+                "componentClass": "page-nav__header"
             })
             <ul class="page-nav__links">
                 <li>
@@ -53,6 +53,11 @@
                         </div>
                         <div class="page-nav__body-content-list">
                             <div class="row">
+                                <div class="col-3 page-nav__body-content-list-item">
+                                    <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                    <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                    <p class="page-nav__body-content-list-item-count">1029</p>
+                                </div>
                                 <div class="col-3 page-nav__body-content-list-item">
                                     <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
                                     <p class="page-nav__body-content-list-item-title">Квартиры</p>
@@ -96,6 +101,16 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="page-nav__footer">
+                <div class="row">
+                    <div class="col-4">
+                        @@include('components/contact-info.html', {
+                            "componentClass": "page-nav__footer-contact-info"
+                        })
+                    </div>
+                    <div class="col-8"></div>
                 </div>
             </div>
         </div>

@@ -1,0 +1,24 @@
+.contact-info {
+  &__title {
+    font-size: 12px;
+    font-weight: $semi;
+    text-transform: uppercase;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $black;
+    font-size: 17px;
+    @include transition();
+    &_phone {
+      font-weight: $semi;
+    }
+    &_email {
+      color: $brand-color;
+    }
+    &:hover {
+      text-decoration: none;
+      color: darken($brand-color, 10%);
+    }
+  }
+}

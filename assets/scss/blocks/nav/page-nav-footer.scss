@@ -1,0 +1,11 @@
+.page-nav__footer {
+  padding: 30px;
+  &-contact-info {
+    display: flex;
+    .contact-info {
+      &__title {
+        margin-right: 40px;
+      }
+    }
+  }
+}
