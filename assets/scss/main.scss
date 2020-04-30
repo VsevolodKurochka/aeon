@@ -20,5 +20,12 @@
 // BLOCKS STYLE
 @import "blocks/popup-block";
 @import "blocks/page-header";
+
+// NAVIGATION
+@import "blocks/nav/page-nav-variables";
+@import "blocks/nav/page-nav";
+@import "blocks/nav/page-nav-hamburger-effect";
+@import "blocks/nav/page-nav-hamburger";
+
 @import "blocks/page-footer";
 

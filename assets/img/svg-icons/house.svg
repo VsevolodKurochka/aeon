@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.68" height="33.485" viewBox="0 0 20.68 33.485">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="house" transform="translate(2475.995 1840.902)">
+    <path id="Path_5" data-name="Path 5" class="cls-1" d="M-2455.815-1807.917h-19.68v-27.051l9.854-5.365,9.826,5.365Z"/>
+    <g id="Group_4" data-name="Group 4">
+      <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-1" width="3.958" height="4.024" transform="translate(-2471.51 -1832.033)"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-1" width="3.958" height="4.024" transform="translate(-2471.51 -1823.985)"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-1" width="3.958" height="4.024" transform="translate(-2471.51 -1815.938)"/>
+      <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-1" width="3.957" height="4.024" transform="translate(-2463.758 -1832.033)"/>
+      <rect id="Rectangle_7" data-name="Rectangle 7" class="cls-1" width="3.957" height="4.024" transform="translate(-2463.758 -1823.985)"/>
+      <rect id="Rectangle_8" data-name="Rectangle 8" class="cls-1" width="3.957" height="4.024" transform="translate(-2463.758 -1815.938)"/>
+    </g>
+  </g>
+</svg>

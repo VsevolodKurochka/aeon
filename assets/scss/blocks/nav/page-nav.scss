@@ -1,0 +1,32 @@
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  @include pos-f(0, null, null, 0);
+  @include size(64px, 100%);
+  background-color: $white;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__link {
+    @include size($nav-icon-width, $nav-icon-height);
+    @include transition();
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    border-radius: 100%;
+    text-decoration: none;
+    color: $black;
+    &:hover {
+      background-color: $brand-color;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
