@@ -1,35 +1,38 @@
 <nav class="page-nav">
-    <div class="page-nav__item">
-        <button class="page-nav__hamburger" type="button" id="js-nav-hamburger">
-            <span class="page-nav__hamburger-lines">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-        </button>
-        <a href="" class="page-nav__link">
-            <span class="icon-phone"></span>
-        </a>
+    <div class="page-nav__desktop">
+        <div class="page-nav__item">
+            @@include('page-header-hamburger.html')
+            <a href="" class="page-nav__link">
+                <span class="icon-phone"></span>
+            </a>
+        </div>
+        <div class="page-nav__item">
+            <a href="" class="page-nav__link">
+                <span class="icon-house"></span>
+            </a>
+            <a href="" class="page-nav__link">
+                <span class="icon-bed"></span>
+            </a>
+            <a href="" class="page-nav__link">
+                <span class="icon-heart"></span>
+            </a>
+        </div>
+        <div class="page-nav__item">
+            <a href="" class="page-nav__link">
+                <span class="icon-facebook"></span>
+            </a>
+            <a href="" class="page-nav__link">
+                <span class="icon-instagram"></span>
+            </a>
+        </div>
     </div>
-    <div class="page-nav__item">
-        <a href="" class="page-nav__link">
-            <span class="icon-house"></span>
-        </a>
-        <a href="" class="page-nav__link">
-            <span class="icon-bed"></span>
-        </a>
-        <a href="" class="page-nav__link">
-            <span class="icon-heart"></span>
-        </a>
+    <div class="page-nav__mobile">
+        <div class="page-nav__item">
+            @@include('page-header-hamburger.html')
+        </div>
     </div>
-    <div class="page-nav__item">
-        <a href="" class="page-nav__link">
-            <span class="icon-facebook"></span>
-        </a>
-        <a href="" class="page-nav__link">
-            <span class="icon-instagram"></span>
-        </a>
+    <div class="page-nav__body">
+
     </div>
 </nav>
 <header class="page-header">

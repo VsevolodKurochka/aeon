@@ -361,5 +361,8 @@ $('.agree-checkbox').each(function() {
 	}
 });
 
-
-
+$(document).ready(function() {
+	$('.js-navigation-hamburger').click(function () {
+		$(this).toggleClass('active');
+	});
+});

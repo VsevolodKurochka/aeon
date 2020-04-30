@@ -1,6 +1,6 @@
-$hamburger-line-width: 100%;
-$hamburger-line-height: 2px;
-$hamburger-line-radius: 5px;
+$hamburger-line-width: 22px;
+$hamburger-line-height: 3px;
+$hamburger-line-radius: 3px;
 
 @mixin hamburger-format() {
   display: inline-block;
@@ -16,35 +16,32 @@ $hamburger-line-radius: 5px;
     @include pos-r();
     @include hamburger-format();
     @include hamburger-transition();
+    @include size($nav-icon-width, $nav-icon-height);
     padding: 0;
-    background-color: transparent;
     border: none;
     outline: none;
     appearance: none;
     -webkit-tap-highlight-color: transparent;
     cursor: pointer;
     z-index: 100;
+    background-color: $black;
+    overflow: hidden;
+    border-radius: 100%;
 
-    &-lines {
-      @include pos-r();
-      @include hamburger-format();
-      @include hamburger-transition();
-      @include size($nav-icon-width, $nav-icon-height);
-      background-color: $black;
-      overflow: hidden;
-      border-radius: 100%;
-      &:hover {
-        background-color: $brand-color;
-      }
-      span {
-        display: block;
-        @include pos-a(null, null, null, 0);
-        @include size($hamburger-line-width, $hamburger-line-height);
-        background-color: $white;
-        border-radius: $hamburger-line-radius;
-        @include hamburger-transition();
-      }
+    &.active,
+    &:hover {
+      background-color: $brand-color;
     }
+
+    span {
+      display: block;
+      @include pos-a(null, null, null, null);
+      @include size($hamburger-line-width, $hamburger-line-height);
+      background-color: $white;
+      border-radius: $hamburger-line-radius;
+      @include hamburger-transition();
+    }
+
     @include hamburger-effect();
   }
 }

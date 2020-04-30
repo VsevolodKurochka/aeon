@@ -3762,18 +3762,38 @@ input[type="radio"].visually-hidden {
         padding-bottom: 50px; } }
 
 .page-nav {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-direction: column;
-      flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
-  width: 64px;
-  height: 100%;
+  width: 100%;
+  height: 64px;
   background-color: #fff; }
+  @media (min-width: 768px) {
+    .page-nav {
+      width: 64px;
+      height: 100%;
+      padding: 25px 0 50px 0; } }
+  .page-nav__desktop {
+    display: none; }
+    @media (min-width: 768px) {
+      .page-nav__desktop {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        height: 100%; } }
+  .page-nav__mobile {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    @media (min-width: 768px) {
+      .page-nav__mobile {
+        display: none; } }
   .page-nav__item {
     display: -ms-flexbox;
     display: flex;
@@ -3796,7 +3816,8 @@ input[type="radio"].visually-hidden {
     background-color: #fff;
     border-radius: 100%;
     text-decoration: none;
-    color: #000; }
+    color: #000;
+    font-size: 18px; }
     .page-nav__link:hover {
       background-color: #2EBCE9;
       text-decoration: none;
@@ -3807,8 +3828,9 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   vertical-align: middle;
   transition: all ease-in-out 0.25s;
+  width: 47px;
+  height: 47px;
   padding: 0;
-  background-color: transparent;
   border: none;
   outline: none;
   -webkit-appearance: none;
@@ -3816,48 +3838,43 @@ input[type="radio"].visually-hidden {
           appearance: none;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
-  z-index: 100; }
-  .page-nav__hamburger-lines {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    transition: all ease-in-out 0.25s;
-    width: 47px;
-    height: 47px;
-    background-color: #000;
-    overflow: hidden;
-    border-radius: 100%; }
-    .page-nav__hamburger-lines:hover {
-      background-color: #2EBCE9; }
-    .page-nav__hamburger-lines span {
-      display: block;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #fff;
-      border-radius: 5px;
-      transition: all ease-in-out 0.25s; }
-  .page-nav__hamburger-lines span:nth-child(1) {
-    top: 0; }
-  .page-nav__hamburger-lines span:nth-child(2), .page-nav__hamburger-lines span:nth-child(3) {
-    top: 13px;
-    left: -7px; }
-  .page-nav__hamburger-lines span:nth-child(4) {
-    top: 25px; }
-  .page-nav__hamburger.active .page-nav__hamburger-lines span:nth-child(1) {
-    top: 10.5px;
+  z-index: 100;
+  background-color: #000;
+  overflow: hidden;
+  border-radius: 100%; }
+  .page-nav__hamburger.active, .page-nav__hamburger:hover {
+    background-color: #2EBCE9; }
+  .page-nav__hamburger span {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all ease-in-out 0.25s; }
+  .page-nav__hamburger span {
+    left: 12px; }
+    .page-nav__hamburger span:nth-child(1) {
+      top: 14px; }
+    .page-nav__hamburger span:nth-child(2), .page-nav__hamburger span:nth-child(3) {
+      top: 22px;
+      width: 15px; }
+    .page-nav__hamburger span:nth-child(4) {
+      top: 30px; }
+  .page-nav__hamburger.active span:nth-child(1) {
+    top: 14px;
     width: 0;
     left: 50%; }
-  .page-nav__hamburger.active .page-nav__hamburger-lines span:nth-child(2) {
+  .page-nav__hamburger.active span:nth-child(2) {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
-  .page-nav__hamburger.active .page-nav__hamburger-lines span:nth-child(3) {
+  .page-nav__hamburger.active span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg); }
-  .page-nav__hamburger.active .page-nav__hamburger-lines span:nth-child(2), .page-nav__hamburger.active .page-nav__hamburger-lines span:nth-child(3) {
-    left: 0; }
-  .page-nav__hamburger.active .page-nav__hamburger-lines span:nth-child(4) {
-    top: 10.5px;
+  .page-nav__hamburger.active span:nth-child(2), .page-nav__hamburger.active span:nth-child(3) {
+    left: 12px;
+    width: 22px; }
+  .page-nav__hamburger.active span:nth-child(4) {
+    top: 30px;
     width: 0;
     left: 50%; }
