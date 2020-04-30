@@ -1,0 +1,45 @@
+<nav class="page-nav js-page-nav">
+    <div class="page-nav__panel page-nav__panel_desktop">
+        <div class="page-nav__item">
+            @@include('hamburger.html')
+            <a href="" class="page-nav__link">
+                <span class="icon-phone"></span>
+            </a>
+        </div>
+        <div class="page-nav__item">
+            <a href="" class="page-nav__link">
+                <span class="icon-house"></span>
+            </a>
+            <a href="" class="page-nav__link">
+                <span class="icon-bed"></span>
+            </a>
+            <a href="" class="page-nav__link">
+                <span class="icon-heart"></span>
+            </a>
+        </div>
+        <div class="page-nav__item">
+            <a href="" class="page-nav__link">
+                <span class="icon-facebook"></span>
+            </a>
+            <a href="" class="page-nav__link">
+                <span class="icon-instagram"></span>
+            </a>
+        </div>
+    </div>
+    <div class="page-nav__panel page-nav__panel_mobile">
+        <div class="page-nav__item">
+            @@include('hamburger.html')
+        </div>
+    </div>
+    <div class="page-nav__body">
+        <div class="page-nav__content page-nav__content_desktop">
+            @@include('page-header.html', {
+                "pageHeaderClass": "page-nav__header"
+            })
+        </div>
+        <div class="page-nav__content page-nav__content_mobile"></div>
+    </div>
+</nav>
+<header class="page-header">
+
+</header>

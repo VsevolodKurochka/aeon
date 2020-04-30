@@ -1,15 +1,67 @@
 .page-header {
-	
-	
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  @include media-breakpoint-up(md) {
+    padding: 30px;
+  }
+
+  &__logo {
+    @include media-breakpoint-up(md) {
+      width: 25%;
+    }
+  }
+
+  &__nav {
+    &-list {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      &-item {
+        display: inline-block;
+        vertical-align: middle;
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+        @include media-breakpoint-up(md) {
+          &:not(:last-child) {
+            margin-right: 45px;
+          }
+        }
+      }
+      &-link {
+        @include pos-r();
+        @include transition();
+        display: inline-block;
+        text-decoration: none;
+        color: $black;
+        text-transform: uppercase;
+        font-size: 13px;
+        padding-bottom: 2px;
+        &:before {
+          @include pos-a(null, null, 0, 50%);
+          @include size(40px, 2px);
+          @include transition();
+          content: '';
+          transform: scaleX(0);
+          background-color: $brand-color;
+          opacity: 0;
+          visibility: hidden;
+          margin-left: -20px;
+        }
+        &:hover {
+          text-decoration: none;
+          color: $black;
+          &:before {
+            opacity: 1;
+            visibility: visible;
+            transform: scaleX(1);
+          }
+        }
+        &:active {
+          color: $brand-color;
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-

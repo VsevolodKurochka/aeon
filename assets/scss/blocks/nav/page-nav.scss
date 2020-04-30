@@ -1,13 +1,5 @@
 .page-nav {
-  @include pos-f(0, null, null, 0);
-  @include size(100%, 64px);
-  background-color: $white;
-  z-index: 100;
-
-  @include media-breakpoint-up($nav-media-change) {
-    @include size(64px, 100%);
-    padding: 25px 0 50px 0;
-  }
+  $root: &;
 
   &__item {
     display: flex;
@@ -35,17 +27,36 @@
     }
   }
 
-  &__desktop {
-    display: none;
+  &__panel {
+    @include pos-f(0, null, null, 0);
+    @include size(100%, $navigation-mobile-height);
+    background-color: $white;
+    z-index: 110;
+
     @include media-breakpoint-up($nav-media-change) {
+      @include size($navigation-width, 100%);
+      padding: 25px 0 50px 0;
+    }
+    &_desktop {
+      display: none;
+      @include media-breakpoint-up($nav-media-change) {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+    &_mobile {
       display: flex;
       justify-content: space-between;
-      flex-direction: column;
-      height: 100%;
+      flex-direction: row;
+      @include media-breakpoint-up($nav-media-change) {
+        display: none;
+      }
     }
   }
 
-  &__desktop & {
+  &__panel & {
     &__link {
       &:not(:last-child) {
         margin-bottom: 15px;
@@ -53,12 +64,19 @@
     }
   }
 
-  &__mobile {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+  &__body {
+    @include pos-a(0, null, null, 0);
+    @include size(100%, 100%);
+    @include transition();
+    background-color: $white;
+    transform: translateY(-100%);
+    z-index: 100;
     @include media-breakpoint-up($nav-media-change) {
-      display: none;
+      transform: translateX(-100%);
+      padding-left: $navigation-width;
+    }
+    #{$root}.active & {
+      transform: none;
     }
   }
 }
