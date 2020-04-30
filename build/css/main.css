@@ -3773,27 +3773,6 @@ input[type="radio"].visually-hidden {
       width: 64px;
       height: 100%;
       padding: 25px 0 50px 0; } }
-  .page-nav__desktop {
-    display: none; }
-    @media (min-width: 768px) {
-      .page-nav__desktop {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-        -ms-flex-direction: column;
-            flex-direction: column;
-        height: 100%; } }
-  .page-nav__mobile {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
-    -ms-flex-direction: row;
-        flex-direction: row; }
-    @media (min-width: 768px) {
-      .page-nav__mobile {
-        display: none; } }
   .page-nav__item {
     display: -ms-flexbox;
     display: flex;
@@ -3822,6 +3801,29 @@ input[type="radio"].visually-hidden {
       background-color: #2EBCE9;
       text-decoration: none;
       color: #fff; }
+  .page-nav__desktop {
+    display: none; }
+    @media (min-width: 768px) {
+      .page-nav__desktop {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        height: 100%; } }
+  .page-nav__desktop .page-nav__link:not(:last-child) {
+    margin-bottom: 15px; }
+  .page-nav__mobile {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+    @media (min-width: 768px) {
+      .page-nav__mobile {
+        display: none; } }
 
 .page-nav__hamburger {
   position: relative;
@@ -3842,6 +3844,9 @@ input[type="radio"].visually-hidden {
   background-color: #000;
   overflow: hidden;
   border-radius: 100%; }
+  @media (min-width: 768px) {
+    .page-nav__hamburger {
+      margin-bottom: 15px; } }
   .page-nav__hamburger.active, .page-nav__hamburger:hover {
     background-color: #2EBCE9; }
   .page-nav__hamburger span {

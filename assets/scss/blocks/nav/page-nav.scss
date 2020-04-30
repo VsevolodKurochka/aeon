@@ -8,25 +8,6 @@
     padding: 25px 0 50px 0;
   }
 
-  &__desktop {
-    display: none;
-    @include media-breakpoint-up($nav-media-change) {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      height: 100%;
-    }
-  }
-
-  &__mobile {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    @include media-breakpoint-up($nav-media-change) {
-      display: none;
-    }
-  }
-
   &__item {
     display: flex;
     justify-content: center;
@@ -50,6 +31,33 @@
       background-color: $brand-color;
       text-decoration: none;
       color: $white;
+    }
+  }
+
+  &__desktop {
+    display: none;
+    @include media-breakpoint-up($nav-media-change) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  &__desktop & {
+    &__link {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__mobile {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    @include media-breakpoint-up($nav-media-change) {
+      display: none;
     }
   }
 }
