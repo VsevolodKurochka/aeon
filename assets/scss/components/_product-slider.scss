@@ -1,0 +1,7 @@
+.product-slider {
+  .product-item {
+    &__inner {
+      @include pad-x(15px);
+    }
+  }
+}

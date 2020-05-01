@@ -1,4 +1,4 @@
-<div class="product-item ">
+<div class="product-item">
     <div class="product-item__inner">
         <div class="product-item__header">
             <span class="product-item__favorite">
@@ -28,17 +28,15 @@
                 <p class="product-item__coordinates-area">@@area</p>
             </div>
             <div class="product-item__info">
-                <p class="product-item__square">@@square <sub>м2</sub></p>
-                <p class="product-item__price">@@price <sub>@@quantity</sub></p>
+                <p class="product-item__info-item product-item__info-item_square">@@square <sub>м2</sub></p>
+                <p class="product-item__info-item product-item__info-item_price">@@price <sub>@@quantity</sub></p>
             </div>
         </div>
         <div class="product-item__footer">
             <ul class="product-item__tags">
                 @@for (var i = 0; i < tags.length; i++) {
                     <li class="product-item__tags-item">
-                        @@if (`+tags[i].count+` && `+tags[i].count+` != "") {
-                            <span class="product-item__tags-item-count">`+tags[i].count+`</span>
-                        }
+                        <span class="product-item__tags-item-count">`+tags[i].count+`</span>
                         <span class="product-item__tags-item-text">`+tags[i].text+`</span>
                     </li>
                 }

@@ -2,6 +2,9 @@
   border: 2px solid $border-color;
   border-radius: 30px;
   color: $text-color;
+  &:hover {
+    color: $brand-color;
+  }
 }
 
 .btn {
