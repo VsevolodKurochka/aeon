@@ -1568,27 +1568,22 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-font-smoothing: antialiased;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: #2EBCE9;
   text-align: center;
-  border-radius: 0;
-  color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  transition: all 0.2s ease-in-out; }
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  padding: 10px 30px; }
+  .btn_border-brand-1 {
+    border: 2px solid #2EBCE9;
+    border-radius: 30px; }
   .btn:hover {
-    background-color: #45c3eb;
     box-shadow: none; }
   .btn:active {
     -webkit-transform: translateY(3px);
             transform: translateY(3px);
-    box-shadow: none;
-    background-color: #16a2ce; }
+    box-shadow: none; }
   .btn:active, .btn:focus, .btn:hover {
-    color: #fff;
     text-decoration: none !important;
     outline: none !important; }
 
