@@ -4,4 +4,17 @@
       @include pad-x(15px);
     }
   }
+  .slick {
+    &-arrow {
+      @include pos-a(100px);
+      @include slickArrow();
+      z-index: 1;
+    }
+    &-prev {
+      left: -10px;
+    }
+    &-next {
+      right: -10px;
+    }
+  }
 }

@@ -1,4 +1,5 @@
 .product-item {
+  outline: none;
   &__inner {
     @include pos-r();
   }
@@ -94,7 +95,7 @@
         font-weight: $semi;
       }
       &-text {
-        font-size: 12px;
+        font-size: 11px;
         text-transform: uppercase;
       }
     }

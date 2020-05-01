@@ -379,6 +379,8 @@ $(document).ready(function() {
 		speed: 300,
 		slidesToShow: 3,
 		slidesToScroll: 1,
+		prevArrow: '<button type="button" class="slick-prev"><span class="icon-prev"></span></button>',
+		nextArrow: '<button type="button" class="slick-next"><span class="icon-next"></span></button>',
 		responsive: [
 			{
 				breakpoint: 600,

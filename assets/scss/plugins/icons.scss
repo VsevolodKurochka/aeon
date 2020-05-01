@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "ico-font";
-	src: url('../fonts/icofont/ico-font.eot?1588325487');
-	src: url('../fonts/icofont/ico-font.eot??1588325487#iefix') format('eot'),
-		url('../fonts/icofont/ico-font.woff2?1588325487') format('woff2'),
-		url('../fonts/icofont/ico-font.woff?1588325487') format('woff'),
-		url('../fonts/icofont/ico-font.ttf?1588325487') format('truetype'),
-		url('../fonts/icofont/ico-font.svg?1588325487#ico-font') format('svg');
+	src: url('../fonts/icofont/ico-font.eot?1588349899');
+	src: url('../fonts/icofont/ico-font.eot??1588349899#iefix') format('eot'),
+		url('../fonts/icofont/ico-font.woff2?1588349899') format('woff2'),
+		url('../fonts/icofont/ico-font.woff?1588349899') format('woff'),
+		url('../fonts/icofont/ico-font.ttf?1588349899') format('truetype'),
+		url('../fonts/icofont/ico-font.svg?1588349899#ico-font') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -51,14 +51,20 @@
 	@if $filename == instagram {
 		$char: "\E005";
 	}
-	@if $filename == phone {
+	@if $filename == next {
 		$char: "\E006";
 	}
-	@if $filename == star-fluid {
+	@if $filename == phone {
 		$char: "\E007";
 	}
-	@if $filename == star {
+	@if $filename == prev {
 		$char: "\E008";
+	}
+	@if $filename == star-fluid {
+		$char: "\E009";
+	}
+	@if $filename == star {
+		$char: "\E00A";
 	}
 
 	@return $char;
@@ -90,8 +96,14 @@
 .icon-instagram {
 	@include icon(instagram);
 }
+.icon-next {
+	@include icon(next);
+}
 .icon-phone {
 	@include icon(phone);
+}
+.icon-prev {
+	@include icon(prev);
 }
 .icon-star-fluid {
 	@include icon(star-fluid);

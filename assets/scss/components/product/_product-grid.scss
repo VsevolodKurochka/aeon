@@ -1,12 +1,15 @@
 .product-grid {
   .product-item {
+    &__image-outer {
+      margin-bottom: 15px;
+    }
     &__info-item_square {
       margin-right: 45px;
     }
     &__tags {
       &-item {
         &:not(:last-child) {
-          margin-right: 20px;
+          margin-right: 15px;
         }
       }
     }
