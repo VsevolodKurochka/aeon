@@ -1,0 +1,48 @@
+<div class="product-item ">
+    <div class="product-item__inner">
+        <div class="product-item__header">
+            <span class="product-item__favorite">
+                @@if (isActive == true) {
+                    <span class="product-item__favorite-icon icon-star-fluid"></span>
+                }
+
+                @@if (isActive == false) {
+                    <span class="product-item__favorite-icon icon-star"></span>
+                }
+                <span class="product-item__favorite-text">fl 234</span>
+            </span>
+            @@if (tag != "") {
+                <a href="#" class="product-item__tag">@@tag</a>
+            }
+        </div>
+        <div class="product-item__image-outer">
+            <img src="@@image" alt="" class="product-item__image">
+        </div>
+        <div class="product-item__body">
+            <div class="product-item__data">
+                <p class="product-item__category">@@category</p>
+                <p class="product-item__type">@@type</p>
+            </div>
+            <div class="product-item__coordinates">
+                <p class="product-item__coordinates-street">@@street</p>
+                <p class="product-item__coordinates-area">@@area</p>
+            </div>
+            <div class="product-item__info">
+                <p class="product-item__square">@@square <sub>м2</sub></p>
+                <p class="product-item__price">@@price <sub>@@quantity</sub></p>
+            </div>
+        </div>
+        <div class="product-item__footer">
+            <ul class="product-item__tags">
+                @@for (var i = 0; i < tags.length; i++) {
+                    <li class="product-item__tags-item">
+                        @@if (`+tags[i].count+` && `+tags[i].count+` != "") {
+                            <span class="product-item__tags-item-count">`+tags[i].count+`</span>
+                        }
+                        <span class="product-item__tags-item-text">`+tags[i].text+`</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
