@@ -19,7 +19,7 @@
     &-content {
       padding: 15px;
       @include media-breakpoint-up($nav-media-change) {
-        padding: 30px;
+        padding: 30px 30px 15px 30px;
       }
       &-header {
         text-align: center;
