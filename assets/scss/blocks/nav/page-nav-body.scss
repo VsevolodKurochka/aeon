@@ -34,8 +34,24 @@
         justify-content: center;
         padding-left: 30px;
         padding-right: 30px;
+        &-row {
+          justify-content: center;
+        }
+        &-wrapper {
+          &:not(:last-child) {
+            margin-bottom: 25px;
+          }
+        }
+        &-title {
+          text-align: center;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          font-size: 12px;
+          min-height: 14px;
+        }
         &-item {
           font-size: 12px;
+          margin-bottom: 30px;
           @include media-breakpoint-up(xlg) {
             font-size: 16px;
           }
@@ -46,7 +62,7 @@
             margin-bottom: 10px;
           }
           &-title {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             text-transform: uppercase;
           }
           &-count {
