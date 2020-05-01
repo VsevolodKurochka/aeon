@@ -28,7 +28,7 @@ $hamburger-line-radius: 3px;
     overflow: hidden;
     border-radius: 100%;
 
-    @include media-breakpoint-up($nav-media-change) {
+    @include media-breakpoint-up($global-layout-change) {
       margin-bottom: 15px;
     }
 

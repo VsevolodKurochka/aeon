@@ -33,13 +33,13 @@
     background-color: $white;
     z-index: 110;
 
-    @include media-breakpoint-up($nav-media-change) {
+    @include media-breakpoint-up($global-layout-change) {
       @include size($navigation-width, 100%);
       padding: 25px 0 50px 0;
     }
     &_desktop {
       display: none;
-      @include media-breakpoint-up($nav-media-change) {
+      @include media-breakpoint-up($global-layout-change) {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -50,7 +50,7 @@
       display: flex;
       justify-content: space-between;
       flex-direction: row;
-      @include media-breakpoint-up($nav-media-change) {
+      @include media-breakpoint-up($global-layout-change) {
         display: none;
       }
     }

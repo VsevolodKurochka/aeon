@@ -36,14 +36,9 @@
             @@include('page-header.html', {
                 "componentClass": "page-nav__header"
             })
-            <ul class="page-nav__links">
-                <li>
-                    <a href="">КУПИТЬ</a>
-                </li>
-                <li>
-                    <a href="">СНЯТЬ</a>
-                </li>
-            </ul>
+            @@include('components/links-buy.html', {
+                "componentClass": "page-nav__links"
+            })
             <div class="page-nav__body-content">
                 <div class="row">
                     <div class="col-6 page-nav__body-content-column">

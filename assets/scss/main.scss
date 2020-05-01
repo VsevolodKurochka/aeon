@@ -20,6 +20,8 @@
 // BLOCKS STYLE
 @import "blocks/popup-block";
 @import "blocks/page-header";
+@import "blocks/page-section";
+@import "blocks/page-content";
 
 // NAVIGATION
 @import "blocks/nav/page-nav-variables";
@@ -35,6 +37,7 @@
 // Components
 @import "components/contact-info";
 @import "components/subscribe-form";
+@import "components/links-buy";
 
 // Pages
 @import "pages/front-page/header";
