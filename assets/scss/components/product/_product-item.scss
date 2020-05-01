@@ -71,9 +71,6 @@
         font-size: 12px;
         bottom: auto;
       }
-      &_square {
-        margin-right: 45px;
-      }
     }
   }
   &__tags {
@@ -85,9 +82,7 @@
     &-item {
       display: flex;
       align-items: center;
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
+
       &-count {
         @include size(30px);
         display: inline-flex;
@@ -100,6 +95,7 @@
       }
       &-text {
         font-size: 12px;
+        text-transform: uppercase;
       }
     }
   }

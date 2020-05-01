@@ -1,0 +1,65 @@
+@mixin columnPadding() {
+  @include pad-x(15px);
+}
+
+@mixin createColumn($width) {
+  flex: 0 0 $width;
+  max-width: $width;
+}
+
+.product-list {
+  .product-item {
+    margin-bottom: 35px;
+
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      @include margin-x(-15px);
+    }
+    &__header {
+      @include createColumn(10%);
+      @include columnPadding();
+      align-items: start;
+    }
+    &__tag {
+      display: none;
+    }
+
+    &__image {
+      height: 100px;
+      &-outer {
+        @include createColumn(20%);
+        @include columnPadding();
+      }
+    }
+    &__body {
+      display: flex;
+      flex-wrap: wrap;
+      @include createColumn(45%);
+      @include columnPadding();
+    }
+    &__data,
+    &__coordinates {
+      @include createColumn(50%);
+    }
+    &__info {
+      @include createColumn(100%);
+      &-item {
+        @include createColumn(50%);
+      }
+    }
+    &__footer {
+      @include columnPadding();
+      @include createColumn(25%);
+    }
+    &__tags {
+      flex-wrap: wrap;
+      &-item {
+        @include createColumn(50%);
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

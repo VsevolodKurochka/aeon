@@ -76,6 +76,16 @@
   padding-right: $right;
 }
 
+@mixin margin-y($top, $bottom: $top) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin margin-x($left, $right: $left) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
 @mixin placeholder() {
   &::placeholder {
     @content;

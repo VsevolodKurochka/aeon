@@ -36,7 +36,9 @@
             <ul class="product-item__tags">
                 @@for (var i = 0; i < tags.length; i++) {
                     <li class="product-item__tags-item">
-                        <span class="product-item__tags-item-count">`+tags[i].count+`</span>
+                        @@if (`+tags[i].count+` != 0) {
+                            <span class="product-item__tags-item-count">`+tags[i].count+`</span>
+                        }
                         <span class="product-item__tags-item-text">`+tags[i].text+`</span>
                     </li>
                 }
