@@ -1,3 +1,8 @@
+@mixin border-btn($border-color, $text-color) {
+  border: 2px solid $border-color;
+  border-radius: 30px;
+  color: $text-color;
+}
 
 .btn {
   @include reset-button();
@@ -9,12 +14,14 @@
   padding: 10px 30px;
 
   &_border {
-    &-brand-1 {
-      border: 2px solid $brand-color;
-      border-radius: 30px;
+    &-brand-white {
+      @include border-btn($brand-color, $white);
+    }
+    &-brand-black {
+      @include border-btn($brand-color, $black);
     }
   }
-  
+
   &:hover {
     box-shadow: none;
   }

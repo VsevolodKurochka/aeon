@@ -1574,9 +1574,14 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 600;
   transition: all 0.2s ease-in-out;
   padding: 10px 30px; }
-  .btn_border-brand-1 {
+  .btn_border-brand-white {
     border: 2px solid #2EBCE9;
-    border-radius: 30px; }
+    border-radius: 30px;
+    color: #fff; }
+  .btn_border-brand-black {
+    border: 2px solid #2EBCE9;
+    border-radius: 30px;
+    color: #000; }
   .btn:hover {
     box-shadow: none; }
   .btn:active {
