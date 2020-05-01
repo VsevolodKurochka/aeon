@@ -1,19 +1,23 @@
 <div class="subscribe-form @@if (componentClass) {@@componentClass}">
     <p class="subscribe-form__title">@@title</p>
-    <div class="subscribe-form__body">
-        <form class="form form-validate">
+    <form class="form form-validate subscribe-form__form">
+        <div class="subscribe-form__content">
             <div class="form__group">
                 <input
                     placeholder="@@placeholder"
                     type="@@type"
                     class="form__control">
             </div>
-            <label class="form-checkbox">
-                <input type="checkbox" value="" class="agree-checkbox">
-                <div class="form-checkbox__indicator"></div>
-                <p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
-            </label>
+            <div class="form__group">
+                <label class="form-checkbox form-checkbox_brand">
+                    <input type="checkbox" value="" class="agree-checkbox">
+                    <div class="form-checkbox__indicator"></div>
+                    <p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
+                </label>
+            </div>
+        </div>
+        <div class="form__group">
             <button type="submit" class="btn btn_border-brand-1">@@buttonText</button>
-        </form>
-    </div>
+        </div>
+    </form>
 </div>

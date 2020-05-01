@@ -166,22 +166,26 @@
                     <div class="col-8">
                         <div class="subscribe-form page-nav__footer-subscribe-form">
     <p class="subscribe-form__title">МЫ ПОМОЖЕМ БЫСТРЕЕ НАЙТИ ТО,<br>ЧТО ВАМ НУЖНО!</p>
-    <div class="subscribe-form__body">
-        <form class="form form-validate">
+    <form class="form form-validate subscribe-form__form">
+        <div class="subscribe-form__content">
             <div class="form__group">
                 <input
                     placeholder="Ваш телефон"
                     type="phone"
                     class="form__control">
             </div>
-            <label class="form-checkbox">
-                <input type="checkbox" value="" class="agree-checkbox">
-                <div class="form-checkbox__indicator"></div>
-                <p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
-            </label>
+            <div class="form__group">
+                <label class="form-checkbox form-checkbox_brand">
+                    <input type="checkbox" value="" class="agree-checkbox">
+                    <div class="form-checkbox__indicator"></div>
+                    <p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
+                </label>
+            </div>
+        </div>
+        <div class="form__group">
             <button type="submit" class="btn btn_border-brand-1">ОТПРАВИТЬ</button>
-        </form>
-    </div>
+        </div>
+    </form>
 </div>
                     </div>
                 </div>

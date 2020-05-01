@@ -8,4 +8,16 @@
       }
     }
   }
+  &-subscribe-form {
+    display: flex;
+    .subscribe-form {
+      &__content,
+      &__title {
+        margin-right: 45px;
+      }
+      &__form {
+        display: flex;
+      }
+    }
+  }
 }
