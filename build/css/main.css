@@ -4217,12 +4217,12 @@ input[type="radio"].visually-hidden {
 
 @font-face {
   font-family: "ico-font";
-  src: url("../fonts/icofont/ico-font.eot?1588270632");
-  src: url("../fonts/icofont/ico-font.eot??1588270632#iefix") format("eot"), url("../fonts/icofont/ico-font.woff2?1588270632") format("woff2"), url("../fonts/icofont/ico-font.woff?1588270632") format("woff"), url("../fonts/icofont/ico-font.ttf?1588270632") format("truetype"), url("../fonts/icofont/ico-font.svg?1588270632#ico-font") format("svg");
+  src: url("../fonts/icofont/ico-font.eot?1588325487");
+  src: url("../fonts/icofont/ico-font.eot??1588325487#iefix") format("eot"), url("../fonts/icofont/ico-font.woff2?1588325487") format("woff2"), url("../fonts/icofont/ico-font.woff?1588325487") format("woff"), url("../fonts/icofont/ico-font.ttf?1588325487") format("truetype"), url("../fonts/icofont/ico-font.svg?1588325487#ico-font") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-.icon-bed:before, .icon-facebook:before, .icon-heart:before, .icon-house:before, .icon-instagram:before, .icon-phone:before {
+.icon-bed:before, .icon-facebook:before, .icon-heart:before, .icon-house:before, .icon-instagram:before, .icon-phone:before, .icon-star-fluid:before, .icon-star:before {
   font-family: "ico-font";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4232,7 +4232,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   text-transform: none;
   line-height: 1; }
-  .icon-bed:before, .icon-facebook:before, .icon-heart:before, .icon-house:before, .icon-instagram:before, .icon-phone:before {
+  .icon-bed:before, .icon-facebook:before, .icon-heart:before, .icon-house:before, .icon-instagram:before, .icon-phone:before, .icon-star-fluid:before, .icon-star:before {
     display: block;
     line-height: 1; }
 
@@ -4253,6 +4253,12 @@ input[type="radio"].visually-hidden {
 
 .icon-phone:before {
   content: ""; }
+
+.icon-star-fluid:before {
+  content: ""; }
+
+.icon-star:before {
+  content: ""; }
 
 .slick-slider {
   position: relative;
