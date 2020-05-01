@@ -4546,7 +4546,8 @@ input[type="radio"].visually-hidden {
     .page-nav__body {
       -webkit-transform: translateX(-100%);
               transform: translateX(-100%);
-      padding-left: 64px; } }
+      padding-left: 64px;
+      padding-bottom: 64px; } }
   .page-nav.active .page-nav__body {
     -webkit-transform: none;
             transform: none; }

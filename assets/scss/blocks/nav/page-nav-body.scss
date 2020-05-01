@@ -12,6 +12,7 @@
     @include media-breakpoint-up($nav-media-change) {
       transform: translateX(-100%);
       padding-left: $navigation-width;
+      padding-bottom: $navigation-width;
     }
     #{$root}.active & {
       transform: none;

@@ -365,5 +365,11 @@ $(document).ready(function() {
 	$('.js-navigation-hamburger').click(function () {
 		$('.js-page-nav').toggleClass('active');
 		$(this).toggleClass('active');
+
+		if ($(this).hasClass('active')) {
+			bodyScrollLock.disableBodyScroll($('.js-page-nav'), bodyScrollOptions);
+		} else {
+			bodyScrollLock.clearAllBodyScrollLocks();
+		}
 	});
 });
