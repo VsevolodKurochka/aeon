@@ -1,11 +1,7 @@
 .product-grid {
   .product-item {
-    &__info {
-      &-item {
-        &_square {
-          margin-right: 45px;
-        }
-      }
+    &__info-item_square {
+      margin-right: 45px;
     }
     &__tags {
       &-item {
