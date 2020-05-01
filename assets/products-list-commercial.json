@@ -1,0 +1,103 @@
+[
+  {
+    "isActive": false,
+    "tag": "",
+    "image": "img/image-flat.jpg",
+    "category": "ТОРГОВОЕ ПОМЕЩЕНИЕ",
+    "type": "Аренда",
+    "street": "Башня «Федерация»",
+    "area": "Москва Сити, Пресненская наб., 12\nЗАО, Пресненский район",
+    "square": "36",
+    "price": "275 000",
+    "quantity": "р/год",
+    "tags": [
+      {"count": "2", "text": "комнат"},
+      {"count": "6", "text": "этаж"},
+      {"count": 0, "text": "Без отделки"}
+    ]
+  },
+  {
+    "isActive": true,
+    "tag": "ЭКСКЛЮЗИВ",
+    "image": "img/image-flat-1.jpg",
+    "category": "Офис",
+    "type": "ПРОДАЖА",
+    "street": "БЦ «Романов Двор»",
+    "area": "Романов пер, 2\nЦАО, район Арбат",
+    "square": "57",
+    "price": "29 375 000",
+    "quantity": "р",
+    "tags": [
+      {"count": "32", "text": "этаж"},
+      {"count": 0, "text": "С ОТДЕЛКОЙ"}
+    ]
+  },
+  {
+    "isActive": false,
+    "tag": "СПЕЦПРЕДЛОЖЕНИЕ",
+    "image": "img/image-flat.jpg",
+    "category": "СКЛАДСКОЕ ПОМЕЩЕНИЕ",
+    "type": "Аренда",
+    "street": "Симферопольском шоссе, 23 км",
+    "area": "Подольский район\nДеревня Бережки",
+    "square": "1023",
+    "price": "65 000",
+    "quantity": "р/мес",
+    "tags": [
+      {"count": "6", "text": "этаж"},
+      {"count": "1", "text": "санузел"},
+      {"count": 0, "text": "С ОТДЕЛКОЙ"}
+    ]
+  },
+  {
+    "isActive": false,
+    "tag": "",
+    "image": "img/image-flat.jpg",
+    "category": "Квартира",
+    "type": "Аренда",
+    "street": "ул. Старая Басманная, 25",
+    "area": "ЦАО, Басманный район",
+    "square": "105,5",
+    "price": "51 850",
+    "quantity": "р/мес",
+    "tags": [
+      {"count": "2", "text": "комнат"},
+      {"count": "6", "text": "этаж"},
+      {"count": 0, "text": "С ОТДЕЛКОЙ"}
+    ]
+  },
+  {
+    "isActive": true,
+    "tag": "ЭКСКЛЮЗИВ",
+    "image": "img/image-flat-1.jpg",
+    "category": "АПАРТАМЕНТ",
+    "type": "ПРОДАЖА",
+    "street": "Пресненская наб., 12",
+    "area": "Москва Сити\nЗАО, Пресненский район",
+    "square": "89,9",
+    "price": "11 320 000",
+    "quantity": "р",
+    "tags": [
+      {"count": "3", "text": "комнат"},
+      {"count": "79", "text": "этаж"},
+      {"count": 0, "text": "С ОТДЕЛКОЙ"}
+    ]
+  },
+  {
+    "isActive": false,
+    "tag": "СПЕЦПРЕДЛОЖЕНИЕ",
+    "image": "img/image-flat.jpg",
+    "category": "Коттедж",
+    "type": "Аренда",
+    "street": "ул. Старая Басманная, 25",
+    "area": "ЦАО, Басманный район",
+    "square": "640",
+    "price": "75 000",
+    "quantity": "р/мес",
+    "tags": [
+      {"count": "12", "text": "комнат"},
+      {"count": "4", "text": "санузла"},
+      {"count": 0, "text": "С ОТДЕЛКОЙ"}
+    ]
+  }
+]

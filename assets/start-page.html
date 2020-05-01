@@ -30,6 +30,22 @@
 			</div>
 		</div>
 	</section>
+	<section class="page-section">
+		<header class="page-section__header">
+			<p class="page-section__header-title">Коммерческая <br>недвижимость</p>
+			@@include('template/components/links-buy.html', {
+				"componentClass": "page-section__header-links"
+			})
+		</header>
+		<div class="container page-section__content">
+			<div class="js-product-slider product-grid product-slider">
+				@@loop('template/components/product.html', "products-list-commercial.json")
+			</div>
+			<div class="page-section__content-footer">
+				<a href="" class="btn btn_border-brand-black">Все предложения</a>
+			</div>
+		</div>
+	</section>
 </div>
 
 @@include('template/page-footer.html')

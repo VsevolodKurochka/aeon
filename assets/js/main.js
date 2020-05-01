@@ -373,6 +373,12 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.product-item__tags-item-count').each(function () {
+		if ($(this).text() === '0') {
+			$(this).remove();
+		}
+	});
+
 	$('.js-product-slider').slick({
 		dots: false,
 		infinite: false,
