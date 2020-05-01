@@ -2,7 +2,7 @@
   $root: &;
 
   &__body {
-    @include pos-a(0, null, null, 0);
+    @include pos-f(0, null, null, 0);
     @include size(100%, 100%);
     @include transition();
     background-color: $white;
@@ -12,7 +12,6 @@
     @include media-breakpoint-up($nav-media-change) {
       transform: translateX(-100%);
       padding-left: $navigation-width;
-      padding-bottom: $navigation-width;
     }
     #{$root}.active & {
       transform: none;
@@ -61,6 +60,7 @@
             @include size(110px, 60px);
             object-fit: cover;
             margin-bottom: 10px;
+            max-width: 100%;
           }
           &-title {
             margin-bottom: 5px;
