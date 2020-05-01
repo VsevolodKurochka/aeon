@@ -12,8 +12,13 @@
   &__favorite {
     display: flex;
     align-items: center;
+    cursor: pointer;
     &-icon {
       margin-right: 10px;
+      @include transition();
+    }
+    &:hover &-icon {
+      color: $brand-color;
     }
     &-text {
       font-size: 15px;

@@ -4509,6 +4509,9 @@ input[type="radio"].visually-hidden {
   .page-section__content-footer {
     margin-top: 30px;
     text-align: center; }
+    @media (min-width: 768px) {
+      .page-section__content-footer {
+        margin-top: 45px; } }
 
 .page-content {
   position: relative; }
@@ -4825,9 +4828,13 @@ input[type="radio"].visually-hidden {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    cursor: pointer; }
     .product-item__favorite-icon {
-      margin-right: 10px; }
+      margin-right: 10px;
+      transition: all 0.3s ease; }
+    .product-item__favorite:hover .product-item__favorite-icon {
+      color: #2EBCE9; }
     .product-item__favorite-text {
       font-size: 15px;
       font-weight: 700; }
