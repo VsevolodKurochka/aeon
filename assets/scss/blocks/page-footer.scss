@@ -1,10 +1,127 @@
-.page-footer {
-
+@mixin footerLayoutChange() {
+  @include media-breakpoint-up($global-layout-change) {
+    @content;
+  }
 }
 
+@mixin footerHideOnMobile() {
+  display: none;
+  @include footerLayoutChange() {
+    display: block;
+  }
+}
 
+.page-footer {
+  text-align: center;
+  background-color: $gray;
+  @include pad-y(30px);
 
+  @include footerLayoutChange() {
+    text-align: left;
+    padding-left: $navigation-width;
+  }
 
+  .contact-info {
+    &__title {
+      margin-bottom: 45px;
+    }
+  }
 
+  .subscribe-form {
+    &__form {
+      @include footerLayoutChange() {
+        max-width: 80%;
+      }
+    }
+  }
 
+  &__info {
+    margin-bottom: 30px;
+  }
 
+  &__find {
+    @include media-breakpoint-down($global-layout-change) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: $semi;
+    margin-bottom: 5px;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    a {
+      @include defaultLink();
+    }
+    &_bold a {
+      text-transform: uppercase;
+      font-weight: $semi;
+    }
+  }
+
+  &__address {
+    font-size: 10px;
+    margin-top: 80px;
+  }
+
+  &__menus {
+    display: none;
+    @include footerLayoutChange() {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__copyright {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: $gray-darkest;
+  }
+
+  &__subscribe {
+    @include footerHideOnMobile();
+  }
+
+  &__contact {
+    @include footerHideOnMobile();
+  }
+
+  @include footerLayoutChange() {
+    &__logo {
+      order: 1;
+    }
+    &__find {
+      order: 3;
+    }
+    &__subscribe {
+      order: 4;
+    }
+    &__contact {
+      order: 2;
+    }
+    &__logo,
+    &__contact {
+      margin-bottom: 30px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &__logo {
+      order: 1;
+    }
+    &__find {
+      order: 3;
+    }
+    &__subscribe {
+      order: 2;
+    }
+    &__contact {
+      order: 4;
+    }
+  }
+}

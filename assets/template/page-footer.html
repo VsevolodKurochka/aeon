@@ -1,0 +1,72 @@
+<footer class="page-footer">
+    <div class="container">
+        <div class="row page-footer__info">
+            <div class="col-12 col-md-6 col-lg-3 page-footer__find">
+                @@include('components/subscribe-form.html', {
+                    "componentClass": "page-footer__subscribe-form",
+                    "title": "МЫ ПОМОЖЕМ БЫСТРЕЕ НАЙТИ ТО,<br>ЧТО ВАМ НУЖНО!",
+                    "placeholder": "Ваш телефон",
+                    "type": "phone",
+                    "buttonText": "ОТПРАВИТЬ"
+                })
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 page-footer__logo">
+                <img src="img/footer-logo.svg" alt="AEON">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 page-footer__subscribe">
+                @@include('components/subscribe-form.html', {
+                    "componentClass": "page-footer__subscribe-form",
+                    "title": "ПОДПИШИТЕСЬ НА НАШУ <br>РАССЫЛКУ",
+                    "placeholder": "Ваш email",
+                    "type": "email",
+                    "buttonText": "ПОДПИСАТЬСЯ"
+                })
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 page-footer__contact">
+                @@include('components/contact-info.html', {
+                    "componentClass": "page-footer__contact-info"
+                })
+            </div>
+        </div>
+        <div class="row page-footer__menus">
+            <div class="col-md-4 col-lg-3">
+                <p class="page-footer__title">ЖИЛАЯ<br>НЕДВИЖИМОСТЬ</p>
+                <ul class="page-footer__list">
+                    <li><a href="">Продажа квартир</a></li>
+                    <li><a href="">Продажа апартаментов</a></li>
+                    <li><a href="">Продажа машиномест</a></li>
+                    <li><a href="">Продажа домов</a></li>
+                    <li><a href="">Аренда квартир</a></li>
+                    <li><a href="">Аренда апартаментов</a></li>
+                    <li><a href="">Аренда машиномест</a></li>
+                    <li><a href="">Аренда домов</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <p class="page-footer__title">КОММЕРЧЕСКАЯ<br>НЕДВИЖИМОСТЬ</p>
+                <ul class="page-footer__list">
+                    <li><a href="">Продажа офисов</a></li>
+                    <li><a href="">Продажа торговых площадей</a></li>
+                    <li><a href="">Продажа арендного бизнеса</a></li>
+                    <li><a href="">Продажа складов</a></li>
+                    <li><a href="">Аренда офисов</a></li>
+                    <li><a href="">Аренда торговых площадей</a></li>
+                    <li><a href="">Аренда складов</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <ul class="page-footer__list page-footer__list_bold">
+                    <li><a href="">О КОМПАНИИ</a></li>
+                    <li><a href="">УПРАВЛЕНИЕ АКТИВАМИ</a></li>
+                    <li><a href="">КОНТАКТЫ</a></li>
+                </ul>
+                <address class="page-footer__address">
+                    ПРЕСНЕНСКАЯ НАБЕРЕЖНАЯ, 12<br>
+                    ДЕЛОВОЙ КОМПЛЕКС «БАШНЯ ФЕДЕРАЦИЯ»<br>
+                    ЦЕНТРАЛЬНЫЙ ОФИС AEON CITY ESTATE
+                </address>
+            </div>
+        </div>
+        <p class="page-footer__copyright">© 2016 – 2020, AEON CITY ESTATE</p>
+    </div>
+</footer>

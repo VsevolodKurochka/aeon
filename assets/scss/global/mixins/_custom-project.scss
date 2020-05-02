@@ -56,3 +56,11 @@
     color: $gray-dark;
   }
 }
+
+@mixin defaultLink() {
+  @include transition();
+  color: $black;
+  &:hover {
+    color: $brand-color;
+  }
+}
