@@ -30,6 +30,10 @@
   }
 
   &__text {
+    font-size: 11px;
+    @include media-breakpoint-up(md) {
+      font-size: 14px;
+    }
     p {
       margin-bottom: 15px;
     }

@@ -1559,6 +1559,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; }
 
 .btn {
+  display: inline-block;
   position: relative;
   outline: none !important;
   border: none;
@@ -4511,8 +4512,13 @@ input[type="radio"].visually-hidden {
     @media (min-width: 768px) {
       .page-section__content-footer {
         margin-top: 45px; } }
-  .page-section__text p {
-    margin-bottom: 15px; }
+  .page-section__text {
+    font-size: 11px; }
+    @media (min-width: 768px) {
+      .page-section__text {
+        font-size: 14px; } }
+    .page-section__text p {
+      margin-bottom: 15px; }
 
 .page-content {
   position: relative; }
@@ -5133,7 +5139,8 @@ input[type="radio"].visually-hidden {
 .front-page-banner {
   text-align: center;
   color: #fff;
-  padding-bottom: 35px;
+  padding-top: 200px;
+  padding-bottom: 40px;
   background: url("../img/bg-front-start.jpg") 0 0 no-repeat;
   background-size: cover; }
   @media (min-width: 768px) {
