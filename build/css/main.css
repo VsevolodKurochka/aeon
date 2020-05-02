@@ -5027,7 +5027,7 @@ input[type="radio"].visually-hidden {
 .product-slider .slick-next {
   right: -10px; }
 
-.front-page__header {
+.front-page-header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -5038,3 +5038,46 @@ input[type="radio"].visually-hidden {
   padding-bottom: 30px;
   background: url("../img/bg-front-page.jpg") 0 0 no-repeat;
   background-size: cover; }
+
+.front-page-banner {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 35px;
+  background: url("../img/bg-front-start.jpg") 0 0 no-repeat;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    .front-page-banner {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: end;
+          align-items: flex-end;
+      -ms-flex-pack: center;
+          justify-content: center;
+      height: 100vh;
+      min-height: 750px; } }
+  .front-page-banner__content {
+    margin-bottom: 25px; }
+    @media (min-width: 768px) {
+      .front-page-banner__content {
+        margin-bottom: 35px; } }
+  .front-page-banner__title {
+    font-size: 21px;
+    margin-bottom: 35px; }
+    @media (min-width: 768px) {
+      .front-page-banner__title {
+        font-size: 27px; } }
+  .front-page-banner__subtitle {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #2EBCE9;
+    margin-bottom: 5px; }
+    @media (min-width: 768px) {
+      .front-page-banner__subtitle {
+        font-size: 27px; } }
+  .front-page-banner__description {
+    font-size: 11px;
+    margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .front-page-banner__description {
+        font-size: 14px; } }
