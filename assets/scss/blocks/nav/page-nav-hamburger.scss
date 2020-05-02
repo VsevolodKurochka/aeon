@@ -1,4 +1,5 @@
-$hamburger-line-width: 22px;
+$hamburger-line-width: 12px;
+$hamburger-line-desktop-width: 22px;
 $hamburger-line-height: 3px;
 $hamburger-line-radius: 3px;
 
@@ -16,7 +17,7 @@ $hamburger-line-radius: 3px;
     @include pos-r();
     @include hamburger-format();
     @include hamburger-transition();
-    @include size($nav-icon-width, $nav-icon-height);
+    @include size(26px);
     padding: 0;
     border: none;
     outline: none;
@@ -29,6 +30,7 @@ $hamburger-line-radius: 3px;
     border-radius: 100%;
 
     @include media-breakpoint-up($global-layout-change) {
+      @include size(45px);
       margin-bottom: 15px;
     }
 
@@ -40,10 +42,13 @@ $hamburger-line-radius: 3px;
     span {
       display: block;
       @include pos-a(null, null, null, null);
-      @include size($hamburger-line-width, $hamburger-line-height);
+      @include size(12px, 2px);
       background-color: $white;
       border-radius: $hamburger-line-radius;
       @include hamburger-transition();
+      @include media-breakpoint-up($global-layout-change) {
+        @include size(22px, 3px);
+      }
     }
 
     @include hamburger-effect();

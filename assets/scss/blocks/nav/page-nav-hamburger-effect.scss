@@ -1,24 +1,23 @@
 @mixin hamburger-effect() {
   span {
-    left: 12px;
+    left: 7px;
     &:nth-child(1) {
-      top: 14px;
+      top: 7px;
     }
 
     &:nth-child(2),
     &:nth-child(3) {
-      top: 22px;
-      width: 15px;
+      top: 12px;
+      width: 10px;
     }
 
     &:nth-child(4) {
-      top: 30px;
+      top: 17px;
     }
   }
   &.active {
     span {
       &:nth-child(1) {
-        top: 14px;
         width: 0;
         left: 50%;
       }
@@ -30,13 +29,54 @@
       }
       &:nth-child(2),
       &:nth-child(3) {
-        left: 12px;
-        width: 22px;
+        left: 6px;
+        width: 15px;
       }
       &:nth-child(4) {
-        top: 30px;
         width: 0;
         left: 50%;
+      }
+    }
+  }
+
+  @include media-breakpoint-up($global-layout-change) {
+    span {
+      left: 12px;
+      &:nth-child(1) {
+        top: 14px;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        top: 22px;
+        width: 15px;
+      }
+
+      &:nth-child(4) {
+        top: 30px;
+      }
+    }
+    &.active {
+      span {
+        &:nth-child(1) {
+          width: 0;
+          left: 50%;
+        }
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          left: 12px;
+          width: 22px;
+        }
+        &:nth-child(4) {
+          width: 0;
+          left: 50%;
+        }
       }
     }
   }
