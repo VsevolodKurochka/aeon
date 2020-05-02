@@ -80,11 +80,9 @@
     }
   }
   &__tags {
+    @include resetList();
     display: flex;
     flex-direction: row;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
     &-item {
       display: flex;
       align-items: center;

@@ -18,7 +18,9 @@
             </a>
         </div>
         <div class="page-nav__item">
-            @@include('components/social.html')
+            @@include('components/social.html', {
+                'componentClass': 'social_vertical'
+            })
         </div>
     </div>
     <div class="page-nav__panel page-nav__panel_mobile">
@@ -151,6 +153,10 @@
                 </div>
             </div>
         </div>
-        <div class="page-nav__content page-nav__content_mobile"></div>
+        <div class="page-nav__content page-nav__content_mobile">
+            @@include('components/social.html', {
+                'componentClass': 'page-nav__social social_horizontal'
+            })
+        </div>
     </div>
 </nav>

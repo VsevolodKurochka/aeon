@@ -2,6 +2,9 @@
     <div class="container">
         <div class="row page-footer__info">
             <div class="col-12 col-md-6 col-lg-3 page-footer__find">
+                @@include('components/social.html', {
+                    'componentClass': 'page-footer__social social_horizontal'
+                })
                 @@include('components/subscribe-form.html', {
                     "componentClass": "page-footer__subscribe-form",
                     "title": "МЫ ПОМОЖЕМ БЫСТРЕЕ НАЙТИ ТО,<br>ЧТО ВАМ НУЖНО!",

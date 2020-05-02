@@ -64,3 +64,31 @@
     color: $brand-color;
   }
 }
+
+@mixin circleLink() {
+  @include size(32px);
+  @include transition();
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-decoration: none;
+  color: $black;
+  font-size: 18px;
+
+  @include media-breakpoint-up(md) {
+    @include size(45px);
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: $brand-color;
+  }
+}
+
+@mixin resetList($mb: 0) {
+  margin-bottom: $mb;
+  padding-left: 0;
+  list-style: none;
+}

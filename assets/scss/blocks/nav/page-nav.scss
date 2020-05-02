@@ -9,22 +9,7 @@
   }
 
   &__link {
-    @include size($nav-icon-width, $nav-icon-height);
-    @include transition();
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $white;
-    border-radius: 100%;
-    text-decoration: none;
-    color: $black;
-    font-size: 18px;
-
-    &:hover,
-    &:active {
-      text-decoration: none;
-      color: $brand-color;
-    }
+    @include circleLink();
   }
 
   &__panel {

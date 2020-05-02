@@ -1,0 +1,12 @@
+.social {
+  @include resetList();
+  &__link {
+    @include circleLink();
+  }
+  &_horizontal & {
+    &__item {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
