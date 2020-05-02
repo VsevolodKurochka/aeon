@@ -6,6 +6,9 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    &_vertical {
+      flex-direction: row;
+    }
   }
 
   &__link {
@@ -42,10 +45,25 @@
     }
   }
 
-  &__panel & {
+  &__panel_desktop & {
     &__link {
       &:not(:last-child) {
         margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__content {
+    &_desktop {
+      display: none;
+      @include media-breakpoint-up($global-layout-change) {
+        display: flex;
+      }
+    }
+    &_mobile {
+      display: flex;
+      @include media-breakpoint-up($global-layout-change) {
+        display: none;
       }
     }
   }

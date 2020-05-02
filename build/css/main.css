@@ -4996,6 +4996,9 @@ input[type="radio"].visually-hidden {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center; }
+  .page-nav__item_vertical {
+    -ms-flex-direction: row;
+        flex-direction: row; }
 
 .page-nav__link {
   width: 32px;
@@ -5056,8 +5059,22 @@ input[type="radio"].visually-hidden {
       .page-nav__panel_mobile {
         display: none; } }
 
-.page-nav__panel .page-nav__link:not(:last-child) {
+.page-nav__panel_desktop .page-nav__link:not(:last-child) {
   margin-bottom: 15px; }
+
+.page-nav__content_desktop {
+  display: none; }
+  @media (min-width: 768px) {
+    .page-nav__content_desktop {
+      display: -ms-flexbox;
+      display: flex; } }
+
+.page-nav__content_mobile {
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 768px) {
+    .page-nav__content_mobile {
+      display: none; } }
 
 .page-nav__hamburger {
   position: relative;
