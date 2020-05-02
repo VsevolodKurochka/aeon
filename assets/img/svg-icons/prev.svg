@@ -1,15 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="25.589" height="13.826" viewBox="0 0 25.589 13.826">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #000;
-        stroke-miterlimit: 10;
-      }
-    </style>
-  </defs>
-  <g id="prev" transform="translate(2022.288 961.166)">
-    <line id="Line_3" data-name="Line 3" class="cls-1" x1="24.682" transform="translate(-2021.381 -954.253)"/>
-    <path id="Path_10" data-name="Path 10" class="cls-1" d="M-2015.021-947.693l-6.56-6.56,6.56-6.56"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 25.6 13.8" style="enable-background:new 0 0 25.6 13.8;" xml:space="preserve">
+<g id="prev" transform="translate(2022.288 961.166)">
+	<g id="Line_3">
+		<rect x="-2021.4" y="-954.8" width="24.7" height="1"/>
+	</g>
+	<g id="Path_10">
+		<polygon points="-2015.4,-947.3 -2022.3,-954.3 -2015.4,-961.2 -2014.7,-960.5 -2020.9,-954.3 -2014.7,-948 		"/>
+	</g>
+</g>
 </svg>

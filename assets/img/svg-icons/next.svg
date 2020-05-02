@@ -1,22 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="25.592" height="13.826" viewBox="0 0 25.592 13.826">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-      }
-
-      .cls-1, .cls-2 {
-        stroke: #000;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-2 {
-        fill: none;
-      }
-    </style>
-  </defs>
-  <g id="next" transform="translate(934.719 961.166)">
-    <line id="Line_2" data-name="Line 2" class="cls-1" x2="24.684" transform="translate(-934.719 -954.253)"/>
-    <path id="Path_8" data-name="Path 8" class="cls-2" d="M-916.394-960.812l6.56,6.558-6.56,6.562"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 25.6 13.8" style="enable-background:new 0 0 25.6 13.8;" xml:space="preserve">
+<g id="next" transform="translate(934.719 961.166)">
+	<g id="Line_2">
+		<rect x="-934.7" y="-954.8" width="24.7" height="1"/>
+	</g>
+	<g id="Path_8">
+		<polygon points="-916,-947.3 -916.7,-948 -910.5,-954.3 -916.7,-960.5 -916,-961.2 -909.1,-954.3 		"/>
+	</g>
+</g>
 </svg>
