@@ -4640,7 +4640,7 @@ input[type="radio"].visually-hidden {
   height: 35px;
   transition: all 0.3s ease;
   border: none;
-  font-size: 15px;
+  font-size: 10px;
   background-color: #fff;
   border-radius: 100%;
   padding: 0;
