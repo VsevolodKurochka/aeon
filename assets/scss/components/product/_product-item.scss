@@ -1,3 +1,10 @@
+@mixin productItemFontSize($default, $layoutChange) {
+  font-size: $default;
+  @include media-breakpoint-up($global-layout-change) {
+    font-size: $layoutChange;
+  }
+}
+
 .product-item {
   outline: none;
   &__inner {
@@ -21,24 +28,19 @@
       color: $brand-color;
     }
     &-text {
-      font-size: 15px;
+      @include productItemFontSize(10px, 15px);
       font-weight: $bold;
     }
   }
   &__tag {
-    font-size: 12px;
+    @include defaultLink();
+    @include productItemFontSize(10px, 12px);
     text-transform: uppercase;
-    @include transition();
-    color: $black;
-    &:hover {
-      color: $brand-color;
-      text-decoration: none;
-    }
   }
   &__image {
     display: block;
     @include size(100%, 145px);
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up($global-layout-change) {
       height: 190px;
     }
   }
@@ -47,34 +49,34 @@
     text-transform: uppercase;
   }
   &__category {
-    font-size: 15px;
+    @include productItemFontSize(15px, 12px);
     margin-bottom: 2px;
   }
   &__type {
-    font-size: 12px;
+    @include productItemFontSize(10px, 12px);
     font-weight: $semi;
     margin-bottom: 0;
   }
   &__coordinates {
     margin-bottom: 15px;
     &-street {
-      font-size: 15px;
+      @include productItemFontSize(12px, 15px);
       font-weight: $semi;
       margin-bottom: 0;
     }
     &-area {
+      @include productItemFontSize(11px, 14px);
       margin-bottom: 0;
-      font-size: 14px;
     }
   }
   &__info {
     display: flex;
     align-items: center;
     &-item {
-      font-size: 27px;
+      @include productItemFontSize(22px, 27px);
       font-weight: $bold;
       sub {
-        font-size: 12px;
+        @include productItemFontSize(10px, 12px);
         bottom: auto;
       }
     }
@@ -88,17 +90,23 @@
       align-items: center;
 
       &-count {
-        @include size(30px);
+        @include size(22px);
         display: inline-flex;
         justify-content: center;
         align-items: center;
         border: 2px solid $black;
         border-radius: 100%;
-        margin-right: 7px;
+        margin-right: 5px;
         font-weight: $semi;
+        font-size: 12px;
+        @include media-breakpoint-up($global-layout-change) {
+          @include size(30px);
+          font-size: 15px;
+          margin-right: 7px;
+        }
       }
       &-text {
-        font-size: 11px;
+        @include productItemFontSize(10px, 11px);
         text-transform: uppercase;
       }
     }

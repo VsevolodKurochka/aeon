@@ -9,7 +9,10 @@
     &__tags {
       &-item {
         &:not(:last-child) {
-          margin-right: 15px;
+          margin-right: 10px;
+          @include media-breakpoint-up($global-layout-change) {
+            margin-right: 15px;
+          }
         }
       }
     }
