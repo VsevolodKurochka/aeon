@@ -6,6 +6,13 @@
     padding: 30px;
   }
 
+  &_static {
+    display: none;
+    @include media-breakpoint-up($global-layout-change) {
+      display: flex;
+    }
+  }
+
   &__logo {
     @include media-breakpoint-up(md) {
       width: 25%;

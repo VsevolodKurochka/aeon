@@ -4806,6 +4806,12 @@ input[type="radio"].visually-hidden {
   @media (min-width: 768px) {
     .page-header {
       padding: 30px; } }
+  .page-header_static {
+    display: none; }
+    @media (min-width: 768px) {
+      .page-header_static {
+        display: -ms-flexbox;
+        display: flex; } }
   @media (min-width: 768px) {
     .page-header__logo {
       width: 25%; } }
