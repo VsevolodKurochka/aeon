@@ -1,0 +1,60 @@
+@@include('template/head.html', {
+	"pagetitle": "О компании",
+	"bodyclass": ""
+})
+
+@@include('template/page-navigation.html',{
+	"active_item": ""
+})
+
+<div class="page-content">
+	@@include('template/page-header.html', {
+		"componentClass": "page-header_static"
+	})
+ 	<section class="text-page__header">
+		<img src="" alt="">
+	</section>
+	<section class="page-section">
+		<div class="container">
+			<header class="page-section__header page-section__header_left">
+				<p class="page-section__header-title">О КОМПАНИИ</p>
+			</header>
+			<div class="row">
+				<div class="col-12 col-md-8">
+					<div class="page-section__text text-page__content">
+						<p class="text-page__content-title">
+							AEON CITY ESTATE
+							<span class="text-page__content-highlight">входит в состав инфраструктурной корпорации AEON
+							и специализируется на предоставлении профессиональных услуг
+							на рынке аренды и продажи объектов недвижимости в Москве
+							и Московской области.</span>
+						</p>
+						<p>Мы подберем недвижимость, соответствующую Вашим целям и задачам.
+						Наш опыт и экспертиза позволяет предложить наиболее инвестиционно-привлекательные объекты.
+						При необходимости, мы возьмём на себя функции управления Вашим объектом, предоставим наиболее
+						полную информацию о состоянии рынка, организуем показы и обеспечим юридическое
+						сопровождение сделки.</p>
+						<p>Каждый наш сотрудник максимально вовлечён в рабочий процесс
+							и несёт персональную ответственность за выполняемую работу.</p>
+						<p>
+							Мы дружная команда, увлечённая своей работой и любящая своих клиентов. Это позволяет нам
+							в кратчайшие сроки добиваться высоких результатов, выстраивая долгосрочные и
+							доверительные отношения с клиентами и партнёрами.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-4"></div>
+			</div>
+		</div>
+	</section>
+</div>
+
+@@include('template/page-footer.html')
+@@include('template/popups.html')
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

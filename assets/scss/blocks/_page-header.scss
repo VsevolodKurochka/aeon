@@ -1,16 +1,18 @@
 .page-header {
-  display: flex;
-  align-items: center;
   padding: 15px;
   @include media-breakpoint-up(md) {
     padding: 30px;
   }
 
   &_static {
-    display: none;
-    @include media-breakpoint-up($global-layout-change) {
-      display: flex;
+    @include media-breakpoint-down($global-layout-change) {
+      display: none;
     }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
   }
 
   &__logo {

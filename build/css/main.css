@@ -4798,20 +4798,18 @@ input[type="radio"].visually-hidden {
         padding-bottom: 50px; } }
 
 .page-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
   padding: 15px; }
   @media (min-width: 768px) {
     .page-header {
       padding: 30px; } }
-  .page-header_static {
-    display: none; }
-    @media (min-width: 768px) {
-      .page-header_static {
-        display: -ms-flexbox;
-        display: flex; } }
+  @media (max-width: 991.98px) {
+    .page-header_static {
+      display: none; } }
+  .page-header__row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
   @media (min-width: 768px) {
     .page-header__logo {
       width: 25%; } }
@@ -4870,6 +4868,8 @@ input[type="radio"].visually-hidden {
   .page-section__header {
     margin-bottom: 30px;
     text-align: center; }
+    .page-section__header_left {
+      text-align: left; }
     .page-section__header-title {
       text-transform: uppercase;
       font-size: 19px;
