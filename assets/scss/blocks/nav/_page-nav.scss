@@ -57,7 +57,7 @@
     &_desktop {
       display: none;
       @include media-breakpoint-up($global-layout-change) {
-        display: flex;
+        display: block;
       }
     }
     &_mobile {

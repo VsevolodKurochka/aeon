@@ -1,7 +1,9 @@
 .page-nav__footer {
   padding: 15px 30px 30px 30px;
   &-contact-info {
-    display: flex;
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
     .contact-info {
       &__title {
         margin-right: 40px;
@@ -9,7 +11,9 @@
     }
   }
   &-subscribe-form {
-    display: flex;
+    @include media-breakpoint-up(lg) {
+      display: flex;
+    }
     .subscribe-form {
       &__content,
       &__title {
