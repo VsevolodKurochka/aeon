@@ -18,23 +18,6 @@
 @import "plugins/icons";
 @import "plugins/slick";
 
-// BLOCKS STYLE
-@import "blocks/popup-block";
-@import "blocks/page-header";
-@import "blocks/page-section";
-@import "blocks/page-content";
-
-// NAVIGATION
-@import "blocks/nav/page-nav-variables";
-@import "blocks/nav/page-nav";
-@import "blocks/nav/page-nav-hamburger-effect";
-@import "blocks/nav/page-nav-hamburger";
-@import "blocks/nav/page-nav-body";
-@import "blocks/nav/page-nav-links";
-@import "blocks/nav/page-nav-footer";
-
-@import "blocks/page-footer";
-
 // Components
 @import "components/contact-info";
 @import "components/subscribe-form";
@@ -44,6 +27,22 @@
 @import "components/product/product-list";
 @import "components/product/product-grid";
 @import "components/product/product-slider";
+
+// BLOCKS STYLE
+@import "blocks/popup-block";
+@import "blocks/page-header";
+@import "blocks/page-section";
+@import "blocks/page-content";
+@import "blocks/page-footer";
+
+// NAVIGATION
+@import "blocks/nav/page-nav-variables";
+@import "blocks/nav/page-nav";
+@import "blocks/nav/page-nav-hamburger-effect";
+@import "blocks/nav/page-nav-hamburger";
+@import "blocks/nav/page-nav-body";
+@import "blocks/nav/page-nav-links";
+@import "blocks/nav/page-nav-footer";
 
 // Pages
 @import "pages/front-page/header";

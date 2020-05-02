@@ -11,6 +11,13 @@
   }
 }
 
+@mixin footerHideOnDesktop() {
+  display: block;
+  @include footerLayoutChange() {
+    display: none;
+  }
+}
+
 .page-footer {
   text-align: center;
   background-color: $gray;
@@ -88,6 +95,11 @@
 
   &__contact {
     @include footerHideOnMobile();
+  }
+
+  &__social {
+    margin-bottom: 30px;
+    @include footerHideOnDesktop();
   }
 
   @include footerLayoutChange() {
