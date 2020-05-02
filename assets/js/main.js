@@ -1,3 +1,11 @@
+var gridBreakpoints = {
+	xs: 0,
+	sm: 576,
+	md: 768,
+	lg: 992,
+	xl: 1200,
+	xlg: 1600
+};
 
 // Set fixed elements that need padding-right when locking the scroll
 window.paddingRightItems = '#page-header';
@@ -389,13 +397,13 @@ $(document).ready(function() {
 		nextArrow: '<button type="button" class="slick-next"><span class="icon-next"></span></button>',
 		responsive: [
 			{
-				breakpoint: 600,
+				breakpoint: gridBreakpoints.lg,
 				settings: {
 					slidesToShow: 2,
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: gridBreakpoints.sm,
 				settings: {
 					slidesToShow: 1,
 				}
