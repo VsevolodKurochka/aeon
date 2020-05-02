@@ -1,0 +1,20 @@
+.page-nav {
+  &__menu {
+    @include margin-x(auto);
+    @include resetList(45px);
+    max-width: 150px;
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+    }
+
+    a {
+      @include defaultLink();
+      font-size: 12px;
+      font-weight: $semi;
+      text-transform: uppercase;
+    }
+  }
+}

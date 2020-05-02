@@ -61,7 +61,12 @@
       }
     }
     &_mobile {
-      display: flex;
+      display: block;
+      padding-top: 55px;
+      text-align: center;
+      .contact-info {
+        margin-bottom: 45px;
+      }
       @include media-breakpoint-up($global-layout-change) {
         display: none;
       }

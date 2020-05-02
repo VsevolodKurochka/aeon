@@ -165,6 +165,16 @@
             </div>
         </div>
         <div class="page-nav__content page-nav__content_mobile">
+            <ul class="page-nav__menu">
+                <li><a href="">ЖИЛАЯ НЕДВИЖИМОСТЬ</a></li>
+                <li><a href="">КОММЕРЧЕСКАЯ НЕДВИЖИМОСТЬ</a></li>
+                <li><a href="">О КОМПАНИИ</a></li>
+                <li><a href="">УПРАВЛЕНИЕ АКТИВАМИ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+            @@include('components/contact-info.html', {
+                "componentClass": ""
+            })
             @@include('components/social.html', {
                 'componentClass': 'page-nav__social social_horizontal'
             })

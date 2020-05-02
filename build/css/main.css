@@ -5070,8 +5070,11 @@ input[type="radio"].visually-hidden {
       display: flex; } }
 
 .page-nav__content_mobile {
-  display: -ms-flexbox;
-  display: flex; }
+  display: block;
+  padding-top: 55px;
+  text-align: center; }
+  .page-nav__content_mobile .contact-info {
+    margin-bottom: 45px; }
   @media (min-width: 768px) {
     .page-nav__content_mobile {
       display: none; } }
@@ -5251,6 +5254,24 @@ input[type="radio"].visually-hidden {
     .page-nav__footer-subscribe-form .subscribe-form__form {
       display: -ms-flexbox;
       display: flex; }
+
+.page-nav__menu {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  padding-left: 0;
+  list-style: none;
+  max-width: 150px; }
+  .page-nav__menu li:not(:last-child) {
+    margin-bottom: 15px; }
+  .page-nav__menu a {
+    transition: all 0.3s ease;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase; }
+    .page-nav__menu a:hover {
+      color: #2EBCE9; }
 
 .front-page-header {
   display: -ms-flexbox;
