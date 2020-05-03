@@ -1,0 +1,93 @@
+@@include('template/head.html', {
+	"pagetitle": "Управление активами",
+	"bodyclass": ""
+})
+
+@@include('template/page-navigation.html',{
+	"active_item": ""
+})
+
+<div class="page-content">
+	@@include('template/page-header.html', {
+		"componentClass": "page-header_static"
+	})
+ 	<section class="text-page__bg text-page__bg_office">
+
+	</section>
+	<section class="page-section">
+		<div class="container">
+			<header class="page-section__header text-page__header">
+				<p class="page-section__header-title page-section__header-title_bold">Управление активами</p>
+			</header>
+			<div class="row text-page__row">
+				<div class="col-12 col-md-8 text-page__column">
+					<div class="page-section__text text-page__content">
+						<p class="text-page__content-title">
+							Профессиональное управление
+							<span class="text-page__content-highlight">способствует максимизации стоимости Вашей
+								недвижимости, не зависимо от ее типа, будь то апартамент, офис, торговое, или
+								складское помещение.</span>
+						</p>
+						<p>Мы владеем различной недвижимостью и вопрос грамотного управления, способного
+							обеспечить стабильное поступление арендных доходов, для нас не пустой звук.
+						</p>
+						<p>Наша команда использует в своей работе эффективные процессы, позволяющие обеспечить
+							максимальный денежный поток от Вашей недвижимости, избавляя от рутины, позволяя Вам
+							сконцентрироваться на чём-то более важном.</p>
+						<p>
+							Мы придерживаемся индивидуального подхода к управлению, исходя из потребностей и целей,
+							которые Вы перед нами ставите, и адаптируем свои услуги под эти задачи.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3">
+					<div class="subscribe-form">
+						<p class="subscribe-form__title">НАПИШИТЕ НАМ, И МЫ ВАМ <br>ПЕРЕЗВОНИМ! </p>
+						<form class="form form-validate subscribe-form__form">
+							<div class="subscribe-form__content">
+								<div class="form__group">
+									<input
+										placeholder="Ваше имя"
+										type="text"
+										class="form__control">
+								</div>
+								<div class="form__group">
+									<input
+										placeholder="Ваш телефон"
+										type="phone"
+										class="form__control">
+								</div>
+								<div class="form__group">
+									<input
+										placeholder="Ваше сообщение"
+										type="text"
+										class="form__control">
+								</div>
+								<div class="form__group">
+									<label class="form-checkbox form-checkbox_brand">
+										<input type="checkbox" value="" class="agree-checkbox">
+										<div class="form-checkbox__indicator"></div>
+										<p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
+									</label>
+								</div>
+							</div>
+							<div class="form__group">
+								<button type="submit" class="btn btn_border-brand-black">ОТПРАВИТЬ</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+@@include('template/page-footer.html')
+@@include('template/popups.html')
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

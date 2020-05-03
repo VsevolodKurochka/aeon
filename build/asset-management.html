@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- ADAPTIVITY -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#0099EF">
+	
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#0099EF">
+	
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta name="apple-touch-fullscreen" content="yes">
+	
+	<!-- CONFIG -->
+	<meta name="format-detection" content="telephone=no">
+	<title>Управление активами - Название проекта</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body >
+
+<nav class="page-nav js-page-nav">
+    <div class="page-nav__panel page-nav__panel_desktop">
+        <div class="page-nav__item">
+            <button class="page-nav__hamburger js-navigation-hamburger" type="button">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+            <a href="" class="page-nav__link">
+                <span class="icon-phone"></span>
+            </a>
+        </div>
+        <div class="page-nav__item">
+            <a href="" class="page-nav__link">
+                <span class="icon-house"></span>
+            </a>
+            <a href="" class="page-nav__link">
+                <span class="icon-bed"></span>
+            </a>
+            <a href="" class="page-nav__link">
+                <span class="icon-heart"></span>
+            </a>
+        </div>
+        <div class="page-nav__item">
+            <ul class="social social_vertical">
+    <li class="social__item">
+        <a href="" class="social__link">
+            <span class="icon-facebook"></span>
+        </a>
+    </li>
+    <li class="social__item">
+        <a href="" class="social__link">
+            <span class="icon-instagram"></span>
+        </a>
+    </li>
+</ul>
+        </div>
+    </div>
+    <div class="page-nav__panel page-nav__panel_mobile">
+        <div class="page-nav__item">
+            <button class="page-nav__hamburger js-navigation-hamburger" type="button">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+        </div>
+        <div class="page-nav__item">
+            <svg class="page-header__image" xmlns="http://www.w3.org/2000/svg" width="87.149" height="32" viewBox="0 0 87.149 32"><g transform="translate(2239.075 2120.136)"><path d="M-2176.065-2109.51c0,6.053-3.844,10.141-9.543,10.141-5.752,0-9.594-4.061-9.594-10.141,0-6.154,3.818-10.19,9.622-10.19,5.671,0,9.515,4.113,9.515,10.19m-14.829-.077c0,4.168,2.017,6.675,5.314,6.706,3.218,0,5.209-2.567,5.209-6.706,0-4.089-2.018-6.627-5.259-6.627-3.221,0-5.264,2.591-5.264,6.627"/><path d="M-2185.608-2099.218c-5.83,0-9.742-4.136-9.742-10.289,0-6.283,3.836-10.344,9.772-10.344,5.778,0,9.661,4.159,9.661,10.344,0,6.153-3.893,10.289-9.691,10.289m.03-20.335c-5.754,0-9.474,3.945-9.474,10.046,0,5.976,3.8,9.989,9.444,9.989,5.62,0,9.392-4.013,9.392-9.989,0-6.008-3.762-10.046-9.362-10.046m0,16.82c-3.423-.032-5.466-2.6-5.466-6.854,0-4.12,2.125-6.774,5.414-6.774,3.335,0,5.406,2.594,5.406,6.774,0,4.227-2.051,6.854-5.354,6.854m-.052-13.332c-3.107,0-5.116,2.542-5.116,6.478,0,4.073,1.933,6.527,5.17,6.555,3.119,0,5.053-2.51,5.053-6.555,0-4-1.957-6.478-5.107-6.478"/><path d="M-2185.608-2099.085c-5.906,0-9.876-4.188-9.876-10.422,0-6.268,3.981-10.482,9.906-10.482,5.859,0,9.8,4.214,9.8,10.482,0,6.234-3.949,10.422-9.828,10.422m.03-20.332c-5.675,0-9.337,3.889-9.337,9.91,0,5.9,3.739,9.855,9.307,9.855,5.537,0,9.257-3.96,9.257-9.855,0-5.927-3.706-9.91-9.227-9.91m0,16.821c-3.456-.032-5.6-2.716-5.6-6.991,0-4.2,2.177-6.913,5.548-6.913,3.417,0,5.542,2.646,5.542,6.913,0,4.311-2.1,6.991-5.49,6.991m-.052-13.332c-3.071,0-4.98,2.428-4.98,6.341,0,3.991,1.881,6.39,5.034,6.421,3.034,0,4.921-2.461,4.921-6.421,0-3.913-1.907-6.341-4.975-6.341"/><path d="M-2185.608-2098.935c-6,0-10.025-4.248-10.025-10.575,0-6.354,4.04-10.626,10.055-10.626,5.947,0,9.947,4.272,9.947,10.626,0,6.327-4.01,10.575-9.977,10.575m.03-20.9c-5.836,0-9.759,4.15-9.759,10.328,0,6.149,3.911,10.277,9.729,10.277,5.79,0,9.68-4.128,9.68-10.277,0-6.178-3.879-10.328-9.65-10.328m-.03,20.335c-5.656,0-9.457-4.02-9.457-10.007,0-6.106,3.724-10.056,9.487-10.056,5.609,0,9.376,4.042,9.376,10.056,0,5.987-3.779,10.007-9.406,10.007m.03-19.767c-5.582,0-9.189,3.833-9.189,9.76,0,5.808,3.682,9.708,9.159,9.708,5.449,0,9.109-3.9,9.109-9.708,0-5.834-3.649-9.76-9.079-9.76m0,16.825h0c-3.545-.038-5.749-2.775-5.749-7.142,0-4.29,2.235-7.059,5.7-7.059,3.511,0,5.693,2.7,5.693,7.059,0,4.4-2.163,7.142-5.641,7.142m-.052-13.9c-3.282,0-5.4,2.652-5.4,6.762,0,4.187,2.089,6.81,5.451,6.842,3.295,0,5.342-2.625,5.342-6.842,0-4.172-2.068-6.762-5.394-6.762m.054,13.331c-3.245-.031-5.183-2.488-5.183-6.569,0-4,1.965-6.491,5.129-6.491s5.122,2.488,5.122,6.491c0,4.052-1.94,6.569-5.068,6.569m-.054-12.762c-2.981,0-4.83,2.372-4.83,6.193,0,3.9,1.827,6.243,4.887,6.273,2.94,0,4.766-2.4,4.766-6.273,0-3.821-1.848-6.193-4.823-6.193"/><path class="a" d="M-2228.377-2113.286h-.054l-2.113,6.257a.193.193,0,0,0,.026.179.189.189,0,0,0,.161.084h3.88a.191.191,0,0,0,.161-.084.2.2,0,0,0,.025-.179Zm-3.773,10.721-1.316,3.309a.188.188,0,0,1-.182.125h-5.229a.19.19,0,0,1-.163-.087.189.189,0,0,1-.022-.181l7.727-20.092a.2.2,0,0,1,.186-.128h5.543a.192.192,0,0,1,.184.128l7.568,20.092a.194.194,0,0,1-.021.181.193.193,0,0,1-.165.087h-5.254a.192.192,0,0,1-.184-.131l-1.241-3.3a.186.186,0,0,0-.181-.128h-7.065a.2.2,0,0,0-.185.125"/><path class="a" d="M-2171.942-2119.619h4.971a.193.193,0,0,1,.156.076l9.576,12.449h.055v-12.325a.2.2,0,0,1,.2-.2h4.87a.2.2,0,0,1,.192.2v20.09a.194.194,0,0,1-.192.2h-4.969a.178.178,0,0,1-.154-.077l-9.577-12.475h-.056v12.354a.2.2,0,0,1-.2.2h-4.87a.193.193,0,0,1-.191-.2v-20.09a.194.194,0,0,1,.191-.2"/><path class="a" d="M-2198.954-2115.531a.327.327,0,0,0,.327-.326v-3.437a.326.326,0,0,0-.327-.325h-14.722a.326.326,0,0,0-.326.325v19.836a.327.327,0,0,0,.326.327h14.722a.326.326,0,0,0,.327-.327v-3.437a.328.328,0,0,0-.327-.324h-9.378a.325.325,0,0,1-.325-.324v-3.7a.325.325,0,0,1,.325-.324h7.534a.329.329,0,0,0,.327-.328v-3.436a.326.326,0,0,0-.327-.325h-7.534a.325.325,0,0,1-.325-.325v-3.222a.327.327,0,0,1,.325-.326Z"/><path d="M-2234.386-2090.083a1.384,1.384,0,0,1-.048.361,2.162,2.162,0,0,1-.144.364,2.1,2.1,0,0,1-.477.6,2.277,2.277,0,0,1-.71.416,2.488,2.488,0,0,1-.862.152h-.1a2.747,2.747,0,0,1-.519-.046,2.636,2.636,0,0,1-.479-.139,2.073,2.073,0,0,1-.733-.467,1.948,1.948,0,0,1-.459-.729,2.808,2.808,0,0,1-.156-.965,3.206,3.206,0,0,1,.176-1.115,2.136,2.136,0,0,1,.494-.785,2.043,2.043,0,0,1,.733-.455,2.685,2.685,0,0,1,.892-.146,2.622,2.622,0,0,1,1.4.322,1.788,1.788,0,0,1,.714.744,2.552,2.552,0,0,1,.232.83h-1.449c-.157-.5-.419-.75-.787-.75h-.059a.607.607,0,0,0-.437.186,1.121,1.121,0,0,0-.285.489,2.059,2.059,0,0,0-.1.624,1.943,1.943,0,0,0,.1.618,1.069,1.069,0,0,0,.293.463.693.693,0,0,0,.479.174.821.821,0,0,0,.5-.171.867.867,0,0,0,.3-.58Z"/><path d="M-2228.1-2088.291h-1.547v-4.59h1.547v4.59Z"/><path d="M-2219.422-2091.639h-1.352v3.348h-1.547v-3.348h-1.344v-1.242h4.242Z"/><path d="M-2210.161-2092.881l-1.744,2.943v1.648h-1.5v-1.648l-1.7-2.943h1.7l.748,1.495.749-1.495Z"/><path d="M-2197.08-2088.291h-3.838v-4.543h3.738v1.1h-2.193v.595h1.846v1.1h-1.846v.652h2.293Z"/><path d="M-2187.869-2089.716a1.3,1.3,0,0,1-.294.838,1.82,1.82,0,0,1-.763.551,2.622,2.622,0,0,1-.994.191,3.254,3.254,0,0,1-1.065-.168,1.7,1.7,0,0,1-.788-.528,1.382,1.382,0,0,1-.3-.9h1.449a.669.669,0,0,0,.748.5.549.549,0,0,0,.357-.109.3.3,0,0,0,.134-.24c0-.139-.1-.24-.292-.3l-.364-.092c-.12-.031-.266-.07-.435-.117s-.317-.093-.44-.138a2.315,2.315,0,0,1-.355-.157,1.429,1.429,0,0,1-.522-.443,1.15,1.15,0,0,1-.2-.686,1.687,1.687,0,0,1,.024-.26,1.325,1.325,0,0,1,.166-.48,1.391,1.391,0,0,1,.361-.4,1.747,1.747,0,0,1,.546-.271,2.483,2.483,0,0,1,.73-.1h.139a2.544,2.544,0,0,1,1.344.336,1.471,1.471,0,0,1,.656,1.161h-1.448a.385.385,0,0,0-.222-.3.872.872,0,0,0-.446-.117c-.214,0-.34.056-.379.172a.221.221,0,0,0-.01.075c0,.2.3.351.907.468a3.031,3.031,0,0,1,1.272.5,1.263,1.263,0,0,1,.352.413,1.13,1.13,0,0,1,.126.538Z"/><path d="M-2178.816-2091.639h-1.353v3.348h-1.544v-3.348h-1.348v-1.242h4.244Z"/><path d="M-2169.46-2088.291h-1.546l-.154-.595h-1.493l-.155.595h-1.546l1.158-3.241.488-1.349h1.6l1.159,3.239Zm-2-1.545-.449-1.5-.451,1.5Z"/><path d="M-2160.756-2091.639h-1.349v3.348h-1.549v-3.348H-2165v-1.242h4.242Z"/><path d="M-2151.927-2088.291h-3.837v-4.543h3.737v1.1h-2.193v.595h1.848v1.1h-1.848v.652h2.293Z"/></g></svg>
+        </div>
+        <div class="page-nav__item page-nav__item_vertical">
+            <a href="" class="page-nav__link">
+                <span class="icon-heart"></span>
+            </a>
+            <a href="" class="page-nav__link">
+                <span class="icon-phone"></span>
+            </a>
+        </div>
+    </div>
+    <div class="page-nav__body">
+        <div class="page-nav__content page-nav__content_desktop">
+            <header class="page-header page-nav__header">
+    <div class="container">
+        <div class="row page-header__row">
+            <div class="page-header__logo">
+                <svg class="page-header__image" xmlns="http://www.w3.org/2000/svg" width="87.149" height="32" viewBox="0 0 87.149 32"><g transform="translate(2239.075 2120.136)"><path d="M-2176.065-2109.51c0,6.053-3.844,10.141-9.543,10.141-5.752,0-9.594-4.061-9.594-10.141,0-6.154,3.818-10.19,9.622-10.19,5.671,0,9.515,4.113,9.515,10.19m-14.829-.077c0,4.168,2.017,6.675,5.314,6.706,3.218,0,5.209-2.567,5.209-6.706,0-4.089-2.018-6.627-5.259-6.627-3.221,0-5.264,2.591-5.264,6.627"/><path d="M-2185.608-2099.218c-5.83,0-9.742-4.136-9.742-10.289,0-6.283,3.836-10.344,9.772-10.344,5.778,0,9.661,4.159,9.661,10.344,0,6.153-3.893,10.289-9.691,10.289m.03-20.335c-5.754,0-9.474,3.945-9.474,10.046,0,5.976,3.8,9.989,9.444,9.989,5.62,0,9.392-4.013,9.392-9.989,0-6.008-3.762-10.046-9.362-10.046m0,16.82c-3.423-.032-5.466-2.6-5.466-6.854,0-4.12,2.125-6.774,5.414-6.774,3.335,0,5.406,2.594,5.406,6.774,0,4.227-2.051,6.854-5.354,6.854m-.052-13.332c-3.107,0-5.116,2.542-5.116,6.478,0,4.073,1.933,6.527,5.17,6.555,3.119,0,5.053-2.51,5.053-6.555,0-4-1.957-6.478-5.107-6.478"/><path d="M-2185.608-2099.085c-5.906,0-9.876-4.188-9.876-10.422,0-6.268,3.981-10.482,9.906-10.482,5.859,0,9.8,4.214,9.8,10.482,0,6.234-3.949,10.422-9.828,10.422m.03-20.332c-5.675,0-9.337,3.889-9.337,9.91,0,5.9,3.739,9.855,9.307,9.855,5.537,0,9.257-3.96,9.257-9.855,0-5.927-3.706-9.91-9.227-9.91m0,16.821c-3.456-.032-5.6-2.716-5.6-6.991,0-4.2,2.177-6.913,5.548-6.913,3.417,0,5.542,2.646,5.542,6.913,0,4.311-2.1,6.991-5.49,6.991m-.052-13.332c-3.071,0-4.98,2.428-4.98,6.341,0,3.991,1.881,6.39,5.034,6.421,3.034,0,4.921-2.461,4.921-6.421,0-3.913-1.907-6.341-4.975-6.341"/><path d="M-2185.608-2098.935c-6,0-10.025-4.248-10.025-10.575,0-6.354,4.04-10.626,10.055-10.626,5.947,0,9.947,4.272,9.947,10.626,0,6.327-4.01,10.575-9.977,10.575m.03-20.9c-5.836,0-9.759,4.15-9.759,10.328,0,6.149,3.911,10.277,9.729,10.277,5.79,0,9.68-4.128,9.68-10.277,0-6.178-3.879-10.328-9.65-10.328m-.03,20.335c-5.656,0-9.457-4.02-9.457-10.007,0-6.106,3.724-10.056,9.487-10.056,5.609,0,9.376,4.042,9.376,10.056,0,5.987-3.779,10.007-9.406,10.007m.03-19.767c-5.582,0-9.189,3.833-9.189,9.76,0,5.808,3.682,9.708,9.159,9.708,5.449,0,9.109-3.9,9.109-9.708,0-5.834-3.649-9.76-9.079-9.76m0,16.825h0c-3.545-.038-5.749-2.775-5.749-7.142,0-4.29,2.235-7.059,5.7-7.059,3.511,0,5.693,2.7,5.693,7.059,0,4.4-2.163,7.142-5.641,7.142m-.052-13.9c-3.282,0-5.4,2.652-5.4,6.762,0,4.187,2.089,6.81,5.451,6.842,3.295,0,5.342-2.625,5.342-6.842,0-4.172-2.068-6.762-5.394-6.762m.054,13.331c-3.245-.031-5.183-2.488-5.183-6.569,0-4,1.965-6.491,5.129-6.491s5.122,2.488,5.122,6.491c0,4.052-1.94,6.569-5.068,6.569m-.054-12.762c-2.981,0-4.83,2.372-4.83,6.193,0,3.9,1.827,6.243,4.887,6.273,2.94,0,4.766-2.4,4.766-6.273,0-3.821-1.848-6.193-4.823-6.193"/><path class="a" d="M-2228.377-2113.286h-.054l-2.113,6.257a.193.193,0,0,0,.026.179.189.189,0,0,0,.161.084h3.88a.191.191,0,0,0,.161-.084.2.2,0,0,0,.025-.179Zm-3.773,10.721-1.316,3.309a.188.188,0,0,1-.182.125h-5.229a.19.19,0,0,1-.163-.087.189.189,0,0,1-.022-.181l7.727-20.092a.2.2,0,0,1,.186-.128h5.543a.192.192,0,0,1,.184.128l7.568,20.092a.194.194,0,0,1-.021.181.193.193,0,0,1-.165.087h-5.254a.192.192,0,0,1-.184-.131l-1.241-3.3a.186.186,0,0,0-.181-.128h-7.065a.2.2,0,0,0-.185.125"/><path class="a" d="M-2171.942-2119.619h4.971a.193.193,0,0,1,.156.076l9.576,12.449h.055v-12.325a.2.2,0,0,1,.2-.2h4.87a.2.2,0,0,1,.192.2v20.09a.194.194,0,0,1-.192.2h-4.969a.178.178,0,0,1-.154-.077l-9.577-12.475h-.056v12.354a.2.2,0,0,1-.2.2h-4.87a.193.193,0,0,1-.191-.2v-20.09a.194.194,0,0,1,.191-.2"/><path class="a" d="M-2198.954-2115.531a.327.327,0,0,0,.327-.326v-3.437a.326.326,0,0,0-.327-.325h-14.722a.326.326,0,0,0-.326.325v19.836a.327.327,0,0,0,.326.327h14.722a.326.326,0,0,0,.327-.327v-3.437a.328.328,0,0,0-.327-.324h-9.378a.325.325,0,0,1-.325-.324v-3.7a.325.325,0,0,1,.325-.324h7.534a.329.329,0,0,0,.327-.328v-3.436a.326.326,0,0,0-.327-.325h-7.534a.325.325,0,0,1-.325-.325v-3.222a.327.327,0,0,1,.325-.326Z"/><path d="M-2234.386-2090.083a1.384,1.384,0,0,1-.048.361,2.162,2.162,0,0,1-.144.364,2.1,2.1,0,0,1-.477.6,2.277,2.277,0,0,1-.71.416,2.488,2.488,0,0,1-.862.152h-.1a2.747,2.747,0,0,1-.519-.046,2.636,2.636,0,0,1-.479-.139,2.073,2.073,0,0,1-.733-.467,1.948,1.948,0,0,1-.459-.729,2.808,2.808,0,0,1-.156-.965,3.206,3.206,0,0,1,.176-1.115,2.136,2.136,0,0,1,.494-.785,2.043,2.043,0,0,1,.733-.455,2.685,2.685,0,0,1,.892-.146,2.622,2.622,0,0,1,1.4.322,1.788,1.788,0,0,1,.714.744,2.552,2.552,0,0,1,.232.83h-1.449c-.157-.5-.419-.75-.787-.75h-.059a.607.607,0,0,0-.437.186,1.121,1.121,0,0,0-.285.489,2.059,2.059,0,0,0-.1.624,1.943,1.943,0,0,0,.1.618,1.069,1.069,0,0,0,.293.463.693.693,0,0,0,.479.174.821.821,0,0,0,.5-.171.867.867,0,0,0,.3-.58Z"/><path d="M-2228.1-2088.291h-1.547v-4.59h1.547v4.59Z"/><path d="M-2219.422-2091.639h-1.352v3.348h-1.547v-3.348h-1.344v-1.242h4.242Z"/><path d="M-2210.161-2092.881l-1.744,2.943v1.648h-1.5v-1.648l-1.7-2.943h1.7l.748,1.495.749-1.495Z"/><path d="M-2197.08-2088.291h-3.838v-4.543h3.738v1.1h-2.193v.595h1.846v1.1h-1.846v.652h2.293Z"/><path d="M-2187.869-2089.716a1.3,1.3,0,0,1-.294.838,1.82,1.82,0,0,1-.763.551,2.622,2.622,0,0,1-.994.191,3.254,3.254,0,0,1-1.065-.168,1.7,1.7,0,0,1-.788-.528,1.382,1.382,0,0,1-.3-.9h1.449a.669.669,0,0,0,.748.5.549.549,0,0,0,.357-.109.3.3,0,0,0,.134-.24c0-.139-.1-.24-.292-.3l-.364-.092c-.12-.031-.266-.07-.435-.117s-.317-.093-.44-.138a2.315,2.315,0,0,1-.355-.157,1.429,1.429,0,0,1-.522-.443,1.15,1.15,0,0,1-.2-.686,1.687,1.687,0,0,1,.024-.26,1.325,1.325,0,0,1,.166-.48,1.391,1.391,0,0,1,.361-.4,1.747,1.747,0,0,1,.546-.271,2.483,2.483,0,0,1,.73-.1h.139a2.544,2.544,0,0,1,1.344.336,1.471,1.471,0,0,1,.656,1.161h-1.448a.385.385,0,0,0-.222-.3.872.872,0,0,0-.446-.117c-.214,0-.34.056-.379.172a.221.221,0,0,0-.01.075c0,.2.3.351.907.468a3.031,3.031,0,0,1,1.272.5,1.263,1.263,0,0,1,.352.413,1.13,1.13,0,0,1,.126.538Z"/><path d="M-2178.816-2091.639h-1.353v3.348h-1.544v-3.348h-1.348v-1.242h4.244Z"/><path d="M-2169.46-2088.291h-1.546l-.154-.595h-1.493l-.155.595h-1.546l1.158-3.241.488-1.349h1.6l1.159,3.239Zm-2-1.545-.449-1.5-.451,1.5Z"/><path d="M-2160.756-2091.639h-1.349v3.348h-1.549v-3.348H-2165v-1.242h4.242Z"/><path d="M-2151.927-2088.291h-3.837v-4.543h3.737v1.1h-2.193v.595h1.848v1.1h-1.848v.652h2.293Z"/></g></svg>
+            </div>
+            <nav class="page-header__nav">
+                <ul class="page-header__nav-list">
+                    <li class="page-header__nav-list-item"><a class="page-header__nav-list-link" href="">О компании</a></li>
+                    <li class="page-header__nav-list-item"><a class="page-header__nav-list-link" href="">Управление активами</a></li>
+                    <li class="page-header__nav-list-item"><a class="page-header__nav-list-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+            <ul class="links-buy page-nav__links">
+    <li>
+        <a href="">КУПИТЬ</a>
+    </li>
+    <li>
+        <a href="">СНЯТЬ</a>
+    </li>
+</ul>
+            <div class="page-nav__body-content">
+                <div class="row">
+                    <div class="col-6 page-nav__body-content-column">
+                        <div class="page-nav__body-content-header">
+                            <p class="page-nav__body-content-header-title">Жилая <br>недвижимость</p>
+                        </div>
+                        <div class="page-nav__body-content-list">
+                            <div class="page-nav__body-content-list-wrapper">
+                                <p class="page-nav__body-content-list-title">В городе</p>
+                                <div class="row page-nav__body-content-list-row">
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-nav__body-content-list-wrapper">
+                                <p class="page-nav__body-content-list-title">За городом</p>
+                                <div class="row page-nav__body-content-list-row">
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 page-nav__body-content-column">
+                        <div class="page-nav__body-content-header">
+                            <p class="page-nav__body-content-header-title">КОММЕРЧЕСКАЯ<br>НЕДВИЖИМОСТЬ</p>
+                        </div>
+                        <div class="page-nav__body-content-list">
+                            <div class="page-nav__body-content-list-wrapper">
+                                <p class="page-nav__body-content-list-title"></p>
+                                <div class="row page-nav__body-content-list-row">
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                    <div class="col-6 col-lg-3 page-nav__body-content-list-item">
+                                        <img src="img/menu-flat.jpg" alt="Квартиры" class="page-nav__body-content-list-item-image">
+                                        <p class="page-nav__body-content-list-item-title">Квартиры</p>
+                                        <p class="page-nav__body-content-list-item-count">1029</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-nav__footer">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="contact-info page-nav__footer-contact-info">
+    <p class="contact-info__title">Отдел продаж</p>
+    <div class="contact-info__body">
+        <a href="tel: +7 (495) 154 32 24" class="contact-info__link contact-info__link_phone">+7 (495) 154 32 24</a>
+        <a href="mailto: info@aeoncity.ru" class="contact-info__link contact-info__link_email">info@aeoncity.ru</a>
+    </div>
+</div>
+                    </div>
+                    <div class="col-8">
+                        <div class="subscribe-form page-nav__footer-subscribe-form">
+    <p class="subscribe-form__title">МЫ ПОМОЖЕМ БЫСТРЕЕ НАЙТИ ТО,<br>ЧТО ВАМ НУЖНО!</p>
+    <form class="form form-validate subscribe-form__form">
+        <div class="subscribe-form__content">
+            <div class="form__group">
+                <input
+                    placeholder="Ваш телефон"
+                    type="phone"
+                    class="form__control">
+            </div>
+            <div class="form__group">
+                <label class="form-checkbox form-checkbox_brand">
+                    <input type="checkbox" value="" class="agree-checkbox">
+                    <div class="form-checkbox__indicator"></div>
+                    <p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
+                </label>
+            </div>
+        </div>
+        <div class="form__group">
+            <button type="submit" class="btn btn_border-brand-black">ОТПРАВИТЬ</button>
+        </div>
+    </form>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-nav__content page-nav__content_mobile">
+            <ul class="page-nav__menu">
+                <li><a href="">ЖИЛАЯ НЕДВИЖИМОСТЬ</a></li>
+                <li><a href="">КОММЕРЧЕСКАЯ НЕДВИЖИМОСТЬ</a></li>
+                <li><a href="">О КОМПАНИИ</a></li>
+                <li><a href="">УПРАВЛЕНИЕ АКТИВАМИ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="contact-info ">
+    <p class="contact-info__title">Отдел продаж</p>
+    <div class="contact-info__body">
+        <a href="tel: +7 (495) 154 32 24" class="contact-info__link contact-info__link_phone">+7 (495) 154 32 24</a>
+        <a href="mailto: info@aeoncity.ru" class="contact-info__link contact-info__link_email">info@aeoncity.ru</a>
+    </div>
+</div>
+            <ul class="social page-nav__social social_horizontal">
+    <li class="social__item">
+        <a href="" class="social__link">
+            <span class="icon-facebook"></span>
+        </a>
+    </li>
+    <li class="social__item">
+        <a href="" class="social__link">
+            <span class="icon-instagram"></span>
+        </a>
+    </li>
+</ul>
+        </div>
+    </div>
+</nav>
+
+<div class="page-content">
+	<header class="page-header page-header_static">
+    <div class="container">
+        <div class="row page-header__row">
+            <div class="page-header__logo">
+                <svg class="page-header__image" xmlns="http://www.w3.org/2000/svg" width="87.149" height="32" viewBox="0 0 87.149 32"><g transform="translate(2239.075 2120.136)"><path d="M-2176.065-2109.51c0,6.053-3.844,10.141-9.543,10.141-5.752,0-9.594-4.061-9.594-10.141,0-6.154,3.818-10.19,9.622-10.19,5.671,0,9.515,4.113,9.515,10.19m-14.829-.077c0,4.168,2.017,6.675,5.314,6.706,3.218,0,5.209-2.567,5.209-6.706,0-4.089-2.018-6.627-5.259-6.627-3.221,0-5.264,2.591-5.264,6.627"/><path d="M-2185.608-2099.218c-5.83,0-9.742-4.136-9.742-10.289,0-6.283,3.836-10.344,9.772-10.344,5.778,0,9.661,4.159,9.661,10.344,0,6.153-3.893,10.289-9.691,10.289m.03-20.335c-5.754,0-9.474,3.945-9.474,10.046,0,5.976,3.8,9.989,9.444,9.989,5.62,0,9.392-4.013,9.392-9.989,0-6.008-3.762-10.046-9.362-10.046m0,16.82c-3.423-.032-5.466-2.6-5.466-6.854,0-4.12,2.125-6.774,5.414-6.774,3.335,0,5.406,2.594,5.406,6.774,0,4.227-2.051,6.854-5.354,6.854m-.052-13.332c-3.107,0-5.116,2.542-5.116,6.478,0,4.073,1.933,6.527,5.17,6.555,3.119,0,5.053-2.51,5.053-6.555,0-4-1.957-6.478-5.107-6.478"/><path d="M-2185.608-2099.085c-5.906,0-9.876-4.188-9.876-10.422,0-6.268,3.981-10.482,9.906-10.482,5.859,0,9.8,4.214,9.8,10.482,0,6.234-3.949,10.422-9.828,10.422m.03-20.332c-5.675,0-9.337,3.889-9.337,9.91,0,5.9,3.739,9.855,9.307,9.855,5.537,0,9.257-3.96,9.257-9.855,0-5.927-3.706-9.91-9.227-9.91m0,16.821c-3.456-.032-5.6-2.716-5.6-6.991,0-4.2,2.177-6.913,5.548-6.913,3.417,0,5.542,2.646,5.542,6.913,0,4.311-2.1,6.991-5.49,6.991m-.052-13.332c-3.071,0-4.98,2.428-4.98,6.341,0,3.991,1.881,6.39,5.034,6.421,3.034,0,4.921-2.461,4.921-6.421,0-3.913-1.907-6.341-4.975-6.341"/><path d="M-2185.608-2098.935c-6,0-10.025-4.248-10.025-10.575,0-6.354,4.04-10.626,10.055-10.626,5.947,0,9.947,4.272,9.947,10.626,0,6.327-4.01,10.575-9.977,10.575m.03-20.9c-5.836,0-9.759,4.15-9.759,10.328,0,6.149,3.911,10.277,9.729,10.277,5.79,0,9.68-4.128,9.68-10.277,0-6.178-3.879-10.328-9.65-10.328m-.03,20.335c-5.656,0-9.457-4.02-9.457-10.007,0-6.106,3.724-10.056,9.487-10.056,5.609,0,9.376,4.042,9.376,10.056,0,5.987-3.779,10.007-9.406,10.007m.03-19.767c-5.582,0-9.189,3.833-9.189,9.76,0,5.808,3.682,9.708,9.159,9.708,5.449,0,9.109-3.9,9.109-9.708,0-5.834-3.649-9.76-9.079-9.76m0,16.825h0c-3.545-.038-5.749-2.775-5.749-7.142,0-4.29,2.235-7.059,5.7-7.059,3.511,0,5.693,2.7,5.693,7.059,0,4.4-2.163,7.142-5.641,7.142m-.052-13.9c-3.282,0-5.4,2.652-5.4,6.762,0,4.187,2.089,6.81,5.451,6.842,3.295,0,5.342-2.625,5.342-6.842,0-4.172-2.068-6.762-5.394-6.762m.054,13.331c-3.245-.031-5.183-2.488-5.183-6.569,0-4,1.965-6.491,5.129-6.491s5.122,2.488,5.122,6.491c0,4.052-1.94,6.569-5.068,6.569m-.054-12.762c-2.981,0-4.83,2.372-4.83,6.193,0,3.9,1.827,6.243,4.887,6.273,2.94,0,4.766-2.4,4.766-6.273,0-3.821-1.848-6.193-4.823-6.193"/><path class="a" d="M-2228.377-2113.286h-.054l-2.113,6.257a.193.193,0,0,0,.026.179.189.189,0,0,0,.161.084h3.88a.191.191,0,0,0,.161-.084.2.2,0,0,0,.025-.179Zm-3.773,10.721-1.316,3.309a.188.188,0,0,1-.182.125h-5.229a.19.19,0,0,1-.163-.087.189.189,0,0,1-.022-.181l7.727-20.092a.2.2,0,0,1,.186-.128h5.543a.192.192,0,0,1,.184.128l7.568,20.092a.194.194,0,0,1-.021.181.193.193,0,0,1-.165.087h-5.254a.192.192,0,0,1-.184-.131l-1.241-3.3a.186.186,0,0,0-.181-.128h-7.065a.2.2,0,0,0-.185.125"/><path class="a" d="M-2171.942-2119.619h4.971a.193.193,0,0,1,.156.076l9.576,12.449h.055v-12.325a.2.2,0,0,1,.2-.2h4.87a.2.2,0,0,1,.192.2v20.09a.194.194,0,0,1-.192.2h-4.969a.178.178,0,0,1-.154-.077l-9.577-12.475h-.056v12.354a.2.2,0,0,1-.2.2h-4.87a.193.193,0,0,1-.191-.2v-20.09a.194.194,0,0,1,.191-.2"/><path class="a" d="M-2198.954-2115.531a.327.327,0,0,0,.327-.326v-3.437a.326.326,0,0,0-.327-.325h-14.722a.326.326,0,0,0-.326.325v19.836a.327.327,0,0,0,.326.327h14.722a.326.326,0,0,0,.327-.327v-3.437a.328.328,0,0,0-.327-.324h-9.378a.325.325,0,0,1-.325-.324v-3.7a.325.325,0,0,1,.325-.324h7.534a.329.329,0,0,0,.327-.328v-3.436a.326.326,0,0,0-.327-.325h-7.534a.325.325,0,0,1-.325-.325v-3.222a.327.327,0,0,1,.325-.326Z"/><path d="M-2234.386-2090.083a1.384,1.384,0,0,1-.048.361,2.162,2.162,0,0,1-.144.364,2.1,2.1,0,0,1-.477.6,2.277,2.277,0,0,1-.71.416,2.488,2.488,0,0,1-.862.152h-.1a2.747,2.747,0,0,1-.519-.046,2.636,2.636,0,0,1-.479-.139,2.073,2.073,0,0,1-.733-.467,1.948,1.948,0,0,1-.459-.729,2.808,2.808,0,0,1-.156-.965,3.206,3.206,0,0,1,.176-1.115,2.136,2.136,0,0,1,.494-.785,2.043,2.043,0,0,1,.733-.455,2.685,2.685,0,0,1,.892-.146,2.622,2.622,0,0,1,1.4.322,1.788,1.788,0,0,1,.714.744,2.552,2.552,0,0,1,.232.83h-1.449c-.157-.5-.419-.75-.787-.75h-.059a.607.607,0,0,0-.437.186,1.121,1.121,0,0,0-.285.489,2.059,2.059,0,0,0-.1.624,1.943,1.943,0,0,0,.1.618,1.069,1.069,0,0,0,.293.463.693.693,0,0,0,.479.174.821.821,0,0,0,.5-.171.867.867,0,0,0,.3-.58Z"/><path d="M-2228.1-2088.291h-1.547v-4.59h1.547v4.59Z"/><path d="M-2219.422-2091.639h-1.352v3.348h-1.547v-3.348h-1.344v-1.242h4.242Z"/><path d="M-2210.161-2092.881l-1.744,2.943v1.648h-1.5v-1.648l-1.7-2.943h1.7l.748,1.495.749-1.495Z"/><path d="M-2197.08-2088.291h-3.838v-4.543h3.738v1.1h-2.193v.595h1.846v1.1h-1.846v.652h2.293Z"/><path d="M-2187.869-2089.716a1.3,1.3,0,0,1-.294.838,1.82,1.82,0,0,1-.763.551,2.622,2.622,0,0,1-.994.191,3.254,3.254,0,0,1-1.065-.168,1.7,1.7,0,0,1-.788-.528,1.382,1.382,0,0,1-.3-.9h1.449a.669.669,0,0,0,.748.5.549.549,0,0,0,.357-.109.3.3,0,0,0,.134-.24c0-.139-.1-.24-.292-.3l-.364-.092c-.12-.031-.266-.07-.435-.117s-.317-.093-.44-.138a2.315,2.315,0,0,1-.355-.157,1.429,1.429,0,0,1-.522-.443,1.15,1.15,0,0,1-.2-.686,1.687,1.687,0,0,1,.024-.26,1.325,1.325,0,0,1,.166-.48,1.391,1.391,0,0,1,.361-.4,1.747,1.747,0,0,1,.546-.271,2.483,2.483,0,0,1,.73-.1h.139a2.544,2.544,0,0,1,1.344.336,1.471,1.471,0,0,1,.656,1.161h-1.448a.385.385,0,0,0-.222-.3.872.872,0,0,0-.446-.117c-.214,0-.34.056-.379.172a.221.221,0,0,0-.01.075c0,.2.3.351.907.468a3.031,3.031,0,0,1,1.272.5,1.263,1.263,0,0,1,.352.413,1.13,1.13,0,0,1,.126.538Z"/><path d="M-2178.816-2091.639h-1.353v3.348h-1.544v-3.348h-1.348v-1.242h4.244Z"/><path d="M-2169.46-2088.291h-1.546l-.154-.595h-1.493l-.155.595h-1.546l1.158-3.241.488-1.349h1.6l1.159,3.239Zm-2-1.545-.449-1.5-.451,1.5Z"/><path d="M-2160.756-2091.639h-1.349v3.348h-1.549v-3.348H-2165v-1.242h4.242Z"/><path d="M-2151.927-2088.291h-3.837v-4.543h3.737v1.1h-2.193v.595h1.848v1.1h-1.848v.652h2.293Z"/></g></svg>
+            </div>
+            <nav class="page-header__nav">
+                <ul class="page-header__nav-list">
+                    <li class="page-header__nav-list-item"><a class="page-header__nav-list-link" href="">О компании</a></li>
+                    <li class="page-header__nav-list-item"><a class="page-header__nav-list-link" href="">Управление активами</a></li>
+                    <li class="page-header__nav-list-item"><a class="page-header__nav-list-link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+ 	<section class="text-page__bg text-page__bg_office">
+
+	</section>
+	<section class="page-section">
+		<div class="container">
+			<header class="page-section__header text-page__header">
+				<p class="page-section__header-title page-section__header-title_bold">Управление активами</p>
+			</header>
+			<div class="row text-page__row">
+				<div class="col-12 col-md-8 text-page__column">
+					<div class="page-section__text text-page__content">
+						<p class="text-page__content-title">
+							Профессиональное управление
+							<span class="text-page__content-highlight">способствует максимизации стоимости Вашей
+								недвижимости, не зависимо от ее типа, будь то апартамент, офис, торговое, или
+								складское помещение.</span>
+						</p>
+						<p>Мы владеем различной недвижимостью и вопрос грамотного управления, способного
+							обеспечить стабильное поступление арендных доходов, для нас не пустой звук.
+						</p>
+						<p>Наша команда использует в своей работе эффективные процессы, позволяющие обеспечить
+							максимальный денежный поток от Вашей недвижимости, избавляя от рутины, позволяя Вам
+							сконцентрироваться на чём-то более важном.</p>
+						<p>
+							Мы придерживаемся индивидуального подхода к управлению, исходя из потребностей и целей,
+							которые Вы перед нами ставите, и адаптируем свои услуги под эти задачи.
+						</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-4 col-lg-3">
+					<div class="subscribe-form">
+						<p class="subscribe-form__title">НАПИШИТЕ НАМ, И МЫ ВАМ <br>ПЕРЕЗВОНИМ! </p>
+						<form class="form form-validate subscribe-form__form">
+							<div class="subscribe-form__content">
+								<div class="form__group">
+									<input
+										placeholder="Ваше имя"
+										type="text"
+										class="form__control">
+								</div>
+								<div class="form__group">
+									<input
+										placeholder="Ваш телефон"
+										type="phone"
+										class="form__control">
+								</div>
+								<div class="form__group">
+									<input
+										placeholder="Ваше сообщение"
+										type="text"
+										class="form__control">
+								</div>
+								<div class="form__group">
+									<label class="form-checkbox form-checkbox_brand">
+										<input type="checkbox" value="" class="agree-checkbox">
+										<div class="form-checkbox__indicator"></div>
+										<p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
+									</label>
+								</div>
+							</div>
+							<div class="form__group">
+								<button type="submit" class="btn btn_border-brand-black">ОТПРАВИТЬ</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row page-footer__info">
+            <div class="col-12 col-md-6 col-lg-3 page-footer__find">
+                <ul class="social page-footer__social social_horizontal">
+    <li class="social__item">
+        <a href="" class="social__link">
+            <span class="icon-facebook"></span>
+        </a>
+    </li>
+    <li class="social__item">
+        <a href="" class="social__link">
+            <span class="icon-instagram"></span>
+        </a>
+    </li>
+</ul>
+                <div class="subscribe-form page-footer__subscribe-form">
+    <p class="subscribe-form__title">МЫ ПОМОЖЕМ БЫСТРЕЕ НАЙТИ ТО,<br>ЧТО ВАМ НУЖНО!</p>
+    <form class="form form-validate subscribe-form__form">
+        <div class="subscribe-form__content">
+            <div class="form__group">
+                <input
+                    placeholder="Ваш телефон"
+                    type="phone"
+                    class="form__control">
+            </div>
+            <div class="form__group">
+                <label class="form-checkbox form-checkbox_brand">
+                    <input type="checkbox" value="" class="agree-checkbox">
+                    <div class="form-checkbox__indicator"></div>
+                    <p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
+                </label>
+            </div>
+        </div>
+        <div class="form__group">
+            <button type="submit" class="btn btn_border-brand-black">ОТПРАВИТЬ</button>
+        </div>
+    </form>
+</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 page-footer__logo">
+                <a href="">
+                    <img src="img/footer-logo.svg" alt="AEON">
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 page-footer__subscribe">
+                <div class="subscribe-form page-footer__subscribe-form">
+    <p class="subscribe-form__title">ПОДПИШИТЕСЬ НА НАШУ <br>РАССЫЛКУ</p>
+    <form class="form form-validate subscribe-form__form">
+        <div class="subscribe-form__content">
+            <div class="form__group">
+                <input
+                    placeholder="Ваш email"
+                    type="email"
+                    class="form__control">
+            </div>
+            <div class="form__group">
+                <label class="form-checkbox form-checkbox_brand">
+                    <input type="checkbox" value="" class="agree-checkbox">
+                    <div class="form-checkbox__indicator"></div>
+                    <p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
+                </label>
+            </div>
+        </div>
+        <div class="form__group">
+            <button type="submit" class="btn btn_border-brand-black">ПОДПИСАТЬСЯ</button>
+        </div>
+    </form>
+</div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 page-footer__contact">
+                <div class="contact-info page-footer__contact-info">
+    <p class="contact-info__title">Отдел продаж</p>
+    <div class="contact-info__body">
+        <a href="tel: +7 (495) 154 32 24" class="contact-info__link contact-info__link_phone">+7 (495) 154 32 24</a>
+        <a href="mailto: info@aeoncity.ru" class="contact-info__link contact-info__link_email">info@aeoncity.ru</a>
+    </div>
+</div>
+            </div>
+        </div>
+        <div class="row page-footer__menus">
+            <div class="col-md-4 col-lg-3">
+                <p class="page-footer__title">ЖИЛАЯ<br>НЕДВИЖИМОСТЬ</p>
+                <ul class="page-footer__list">
+                    <li><a href="">Продажа квартир</a></li>
+                    <li><a href="">Продажа апартаментов</a></li>
+                    <li><a href="">Продажа машиномест</a></li>
+                    <li><a href="">Продажа домов</a></li>
+                    <li><a href="">Аренда квартир</a></li>
+                    <li><a href="">Аренда апартаментов</a></li>
+                    <li><a href="">Аренда машиномест</a></li>
+                    <li><a href="">Аренда домов</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <p class="page-footer__title">КОММЕРЧЕСКАЯ<br>НЕДВИЖИМОСТЬ</p>
+                <ul class="page-footer__list">
+                    <li><a href="">Продажа офисов</a></li>
+                    <li><a href="">Продажа торговых площадей</a></li>
+                    <li><a href="">Продажа арендного бизнеса</a></li>
+                    <li><a href="">Продажа складов</a></li>
+                    <li><a href="">Аренда офисов</a></li>
+                    <li><a href="">Аренда торговых площадей</a></li>
+                    <li><a href="">Аренда складов</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <ul class="page-footer__list page-footer__list_bold">
+                    <li><a href="">О КОМПАНИИ</a></li>
+                    <li><a href="">УПРАВЛЕНИЕ АКТИВАМИ</a></li>
+                    <li><a href="">КОНТАКТЫ</a></li>
+                </ul>
+                <address class="page-footer__address">
+                    ПРЕСНЕНСКАЯ НАБЕРЕЖНАЯ, 12<br>
+                    ДЕЛОВОЙ КОМПЛЕКС «БАШНЯ ФЕДЕРАЦИЯ»<br>
+                    ЦЕНТРАЛЬНЫЙ ОФИС AEON CITY ESTATE
+                </address>
+            </div>
+        </div>
+        <p class="page-footer__copyright">© 2016 – 2020, AEON CITY ESTATE</p>
+    </div>
+</footer>
+<div class="popup-block" id="popup-id">
+	<div class="popup-block__overlay">
+		<div class="popup-block__popup">
+			<div class="inner-content">
+				<a href="javascript:;" data-toggle="modal-dismiss" class="popup-block__close"></a>
+				
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
