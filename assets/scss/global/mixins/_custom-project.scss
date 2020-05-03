@@ -92,3 +92,12 @@
   padding-left: 0;
   list-style: none;
 }
+
+@mixin columnPadding() {
+  @include pad-x(15px);
+}
+
+@mixin createColumn($width) {
+  flex: 0 0 $width;
+  max-width: $width;
+}

@@ -1,7 +1,7 @@
 .page-header {
   padding: 15px;
   @include media-breakpoint-up(lg) {
-    padding: 30px;
+    padding: 25px;
   }
 
   &_static {
@@ -12,12 +12,6 @@
 
   &__row {
     align-items: center;
-  }
-
-  &__logo {
-    @include media-breakpoint-up(md) {
-      width: 25%;
-    }
   }
 
   &__nav {
