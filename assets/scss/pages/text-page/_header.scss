@@ -6,6 +6,9 @@
       &_office {
         @include bgi('../img/bg-office.jpg', 0 center);
       }
+      &_city {
+        @include bgi('../img/bg-city.jpg', 0 30%);
+      }
     }
   }
   &__header {
