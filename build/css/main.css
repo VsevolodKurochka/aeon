@@ -5407,9 +5407,10 @@ input[type="radio"].visually-hidden {
       margin-bottom: 45px; } }
 
 .contact-page__link {
-  display: block;
   transition: all 0.3s ease;
   color: #000;
+  display: block;
+  margin-bottom: 15px;
   font-size: 15px; }
   .contact-page__link:hover {
     color: #2EBCE9; }
@@ -5436,7 +5437,7 @@ input[type="radio"].visually-hidden {
 
 .contact-page__address {
   font-size: 14px;
-  margin-bottom: 30px; }
+  margin-bottom: 35px; }
   .contact-page__address span {
     display: block;
     font-weight: 700; }
