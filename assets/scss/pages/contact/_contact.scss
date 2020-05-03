@@ -1,0 +1,59 @@
+.contact-page {
+  &__row {
+    @include media-breakpoint-up($global-layout-change) {
+      justify-content: space-between;
+    }
+  }
+
+  &__info {
+    margin-bottom: 30px;
+    @include media-breakpoint-up($global-layout-change) {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__link {
+    display: block;
+    @include defaultLink();
+    font-size: 15px;
+    @include media-breakpoint-up($global-layout-change) {
+      font-size: 19px;
+    }
+    &_email {
+      color: $brand-color;
+    }
+  }
+
+  &__time {
+    font-size: 15px;
+    margin-top: 30px;
+    @include media-breakpoint-up($global-layout-change) {
+      font-size: 19px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__address {
+    font-size: 14px;
+    margin-bottom: 30px;
+    span {
+      display: block;
+      font-weight: $bold;
+    }
+    a {
+      @include defaultLink();
+      color: $brand-color;
+    }
+  }
+
+  &__show-on-map {
+    display: block;
+    cursor: pointer;
+    @include defaultLink();
+  }
+}
