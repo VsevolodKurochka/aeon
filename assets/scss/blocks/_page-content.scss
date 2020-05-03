@@ -1,6 +1,8 @@
 .page-content {
   @include pos-r();
+  padding-top: 20px;
   @include media-breakpoint-up($global-layout-change) {
+    padding-top: 0;
     padding-left: $navigation-width;
   }
 }

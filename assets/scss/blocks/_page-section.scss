@@ -13,9 +13,14 @@
       text-align: left;
     }
     &-title {
-      text-transform: uppercase;
       font-size: 19px;
       font-weight: $semi;
+      &_uppercase {
+        text-transform: uppercase;
+      }
+      &_bold {
+        font-weight: $bold;
+      }
       @include media-breakpoint-up(lg) {
         font-size: 27px;
       }

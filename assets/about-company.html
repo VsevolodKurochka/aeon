@@ -11,16 +11,16 @@
 	@@include('template/page-header.html', {
 		"componentClass": "page-header_static"
 	})
- 	<section class="text-page__header">
-		<img src="" alt="">
+ 	<section class="text-page__bg text-page__bg_office">
+
 	</section>
 	<section class="page-section">
 		<div class="container">
-			<header class="page-section__header page-section__header_left">
-				<p class="page-section__header-title">О КОМПАНИИ</p>
+			<header class="page-section__header text-page__header">
+				<p class="page-section__header-title page-section__header-title_bold">О компании</p>
 			</header>
-			<div class="row">
-				<div class="col-12 col-md-8">
+			<div class="row text-page__row">
+				<div class="col-12 col-md-8 text-page__column">
 					<div class="page-section__text text-page__content">
 						<p class="text-page__content-title">
 							AEON CITY ESTATE
@@ -43,7 +43,43 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-12 col-md-4"></div>
+				<div class="col-12 col-md-4 col-lg-3">
+					<div class="subscribe-form">
+						<p class="subscribe-form__title">НАПИШИТЕ НАМ, И МЫ ВАМ <br>ПЕРЕЗВОНИМ! </p>
+						<form class="form form-validate subscribe-form__form">
+							<div class="subscribe-form__content">
+								<div class="form__group">
+									<input
+										placeholder="Ваше имя"
+										type="text"
+										class="form__control">
+								</div>
+								<div class="form__group">
+									<input
+										placeholder="Ваш телефон"
+										type="phone"
+										class="form__control">
+								</div>
+								<div class="form__group">
+									<input
+										placeholder="Ваше сообщение"
+										type="text"
+										class="form__control">
+								</div>
+								<div class="form__group">
+									<label class="form-checkbox form-checkbox_brand">
+										<input type="checkbox" value="" class="agree-checkbox">
+										<div class="form-checkbox__indicator"></div>
+										<p class="form-checkbox__text">Я согласен с условиями передачи<br> информации</p>
+									</label>
+								</div>
+							</div>
+							<div class="form__group">
+								<button type="submit" class="btn btn_border-brand-black">ОТПРАВИТЬ</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>

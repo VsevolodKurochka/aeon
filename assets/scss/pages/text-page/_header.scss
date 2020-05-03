@@ -1,0 +1,16 @@
+.text-page {
+  &__bg {
+    @include pos-r();
+    @include media-breakpoint-up($global-layout-change) {
+      height: 400px;
+      &_office {
+        @include bgi('../img/bg-office.jpg', 0 center);
+      }
+    }
+  }
+  &__header {
+    @include media-breakpoint-up($global-layout-change) {
+      text-align: left;
+    }
+  }
+}

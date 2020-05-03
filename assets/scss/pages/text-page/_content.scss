@@ -1,0 +1,23 @@
+.text-page {
+  &__row {
+    @include media-breakpoint-up($global-layout-change) {
+      justify-content: space-between;
+    }
+  }
+  &__content {
+    &-title {
+      font-size: 15px;
+      @include media-breakpoint-up($global-layout-change) {
+        font-size: 19px;
+      }
+    }
+    &-highlight {
+      color: $brand-color;
+    }
+  }
+  &__column {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+  }
+}

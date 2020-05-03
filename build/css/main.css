@@ -4799,15 +4799,13 @@ input[type="radio"].visually-hidden {
 
 .page-header {
   padding: 15px; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .page-header {
       padding: 30px; } }
-  @media (max-width: 991.98px) {
+  @media (max-width: 767.98px) {
     .page-header_static {
       display: none; } }
   .page-header__row {
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-align: center;
         align-items: center; }
   @media (min-width: 768px) {
@@ -4871,9 +4869,12 @@ input[type="radio"].visually-hidden {
     .page-section__header_left {
       text-align: left; }
     .page-section__header-title {
-      text-transform: uppercase;
       font-size: 19px;
       font-weight: 600; }
+      .page-section__header-title_uppercase {
+        text-transform: uppercase; }
+      .page-section__header-title_bold {
+        font-weight: 700; }
       @media (min-width: 992px) {
         .page-section__header-title {
           font-size: 27px; } }
@@ -4892,9 +4893,11 @@ input[type="radio"].visually-hidden {
       margin-bottom: 15px; }
 
 .page-content {
-  position: relative; }
+  position: relative;
+  padding-top: 20px; }
   @media (min-width: 768px) {
     .page-content {
+      padding-top: 0;
       padding-left: 64px; } }
 
 .page-footer {
@@ -5343,3 +5346,34 @@ input[type="radio"].visually-hidden {
       max-width: 80%;
       margin-left: auto;
       margin-right: auto; } }
+
+.text-page__bg {
+  position: relative; }
+  @media (min-width: 768px) {
+    .text-page__bg {
+      height: 400px; }
+      .text-page__bg_office {
+        background: url("../img/bg-office.jpg") 0 center no-repeat;
+        background-size: cover; } }
+
+@media (min-width: 768px) {
+  .text-page__header {
+    text-align: left; } }
+
+@media (min-width: 768px) {
+  .text-page__row {
+    -ms-flex-pack: justify;
+        justify-content: space-between; } }
+
+.text-page__content-title {
+  font-size: 15px; }
+  @media (min-width: 768px) {
+    .text-page__content-title {
+      font-size: 19px; } }
+
+.text-page__content-highlight {
+  color: #2EBCE9; }
+
+@media (max-width: 991.98px) {
+  .text-page__column {
+    margin-bottom: 30px; } }
