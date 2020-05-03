@@ -18,15 +18,6 @@
     visibility: hidden;
     margin-left: -20px;
   }
-  &:hover {
-    text-decoration: none;
-    color: $black;
-    &:before {
-      opacity: 1;
-      visibility: visible;
-      transform: scaleX(1);
-    }
-  }
   &:active {
     color: $brand-color;
   }

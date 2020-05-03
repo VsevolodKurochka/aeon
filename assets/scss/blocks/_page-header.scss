@@ -14,23 +14,35 @@
     align-items: center;
   }
 
-  &__nav {
-    &-list {
-      @include resetList();
-      &-item {
-        display: inline-block;
-        vertical-align: middle;
+  &__list {
+    @include resetList();
+    &-item {
+      display: inline-block;
+      vertical-align: middle;
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+      @include media-breakpoint-up(md) {
         &:not(:last-child) {
-          margin-right: 15px;
-        }
-        @include media-breakpoint-up(md) {
-          &:not(:last-child) {
-            margin-right: 45px;
-          }
+          margin-right: 45px;
         }
       }
-      &-link {
-        @include linkEffect(13px);
+    }
+    &-link {
+      @include linkEffect(13px);
+
+      &.active,
+      &.active:hover,
+      &:hover {
+        color: $brand-color;
+      }
+
+      &:not(.active):hover {
+        &:before {
+          opacity: 1;
+          visibility: visible;
+          transform: scaleX(1);
+        }
       }
     }
   }

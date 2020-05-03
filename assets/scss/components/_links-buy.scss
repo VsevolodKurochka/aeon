@@ -22,5 +22,13 @@
   a {
     @include linkEffect(14px);
     font-weight: $semi;
+    &:hover {
+      color: $black;
+      &:before {
+        opacity: 1;
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
   }
 }
