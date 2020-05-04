@@ -4369,6 +4369,18 @@ input[type="radio"].visually-hidden {
   font-size: 12px;
   font-weight: 600; }
 
+.subscribe-form_center {
+  text-align: center; }
+
+@media (min-width: 768px) {
+  .subscribe-form_center .subscribe-form__content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .subscribe-form_center .subscribe-form__content .form__group:not(:last-child) {
+      margin-right: 30px; } }
+
 .links-buy {
   padding-left: 0;
   margin-bottom: 0;
