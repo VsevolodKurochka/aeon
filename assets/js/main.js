@@ -410,8 +410,6 @@ $(document).ready(function() {
 			}
 		]
 	});
-
-
 	$('.js-product-page-slider').slick({
 		dots: true,
 		infinite: true,
@@ -428,5 +426,11 @@ $(document).ready(function() {
 				}
 			}
 		]
+	});
+
+	$('.js-example-basic-single').select2({
+		minimumResultsForSearch: -1,
+		containerCssClass: "custom-container",
+		dropdownCssClass: "custom-dropdown",
 	});
 });
