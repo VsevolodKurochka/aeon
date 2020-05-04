@@ -1,0 +1,47 @@
+@@include('template/head.html', {
+	"pagetitle": "Карточка объекта",
+	"bodyclass": ""
+})
+
+@@include('template/page-navigation.html',{
+	"active_item": ""
+})
+
+<div class="page-content page-product">
+	@@include('template/page-header.html', {
+		"componentClass": "page-header_static"
+	})
+
+	<div class="container">
+		<h1 class="page-product__title">ЖИЛАЯ НЕДВИЖИМОСТЬ</h1>
+		@@include('template/page-breadcrumbs.html', {
+			"componentClass": ""
+		})
+	</div>
+
+	@@include('template/page-return.html', {
+		"componentClass": "",
+		"item": "возврат к результатам поиска"
+	})
+
+	<section class="page-section">
+		<header class="page-section__header">
+			<p class="page-section__header-title page-section__header-title_uppercase">ДРУГИЕ КВАРТИРЫ В ЖК «САДОВЫЕ КВАРТАЛЫ»</p>
+		</header>
+		<div class="container page-section__content">
+			<div class="js-product-slider product-grid product-slider">
+				@@loop('template/components/product.html', "products-list-commercial.json")
+			</div>
+		</div>
+	</section>
+</div>
+
+@@include('template/page-footer.html')
+@@include('template/popups.html')
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

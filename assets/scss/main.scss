@@ -32,6 +32,7 @@
 @import "blocks/popup-block";
 @import "blocks/page-header";
 @import "blocks/page-breadcrumbs";
+@import "blocks/page-return";
 @import "blocks/page-section";
 @import "blocks/page-content";
 @import "blocks/page-footer";
@@ -57,3 +58,6 @@
 
 // Contact
 @import "pages/contact/contact";
+
+// Product
+@import "pages/product/page-product";
