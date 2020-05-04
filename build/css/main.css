@@ -5663,11 +5663,45 @@ input[type="radio"].visually-hidden {
           align-items: center;
       -ms-flex-pack: justify;
           justify-content: space-between;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px;
+      margin-top: 10px; } }
   .page-product-content__header-type {
     text-transform: uppercase;
     font-size: 17px;
     font-weight: 600; }
+
+.page-product-content__body-name {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 19px; }
+  @media (min-width: 768px) {
+    .page-product-content__body-name {
+      font-size: 27px; } }
+  .page-product-content__body-name-square {
+    display: block; }
+  @media (min-width: 768px) {
+    .page-product-content__body-name {
+      margin-bottom: 5px; }
+      .page-product-content__body-name-square {
+        display: inline-block; } }
+
+@media (min-width: 768px) {
+  .page-product-content__body-info {
+    display: none; } }
+
+.page-product-content__body-address {
+  font-size: 12px; }
+  @media (min-width: 768px) {
+    .page-product-content__body-address {
+      font-size: 14px; } }
+
+.page-product-content__description {
+  font-size: 10px; }
+  @media (min-width: 768px) {
+    .page-product-content__description {
+      font-size: 14px; } }
+  .page-product-content__description p {
+    margin-bottom: 15px; }
 
 .page-product-content__plan-price {
   font-weight: 700;

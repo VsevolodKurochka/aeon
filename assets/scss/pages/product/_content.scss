@@ -6,11 +6,42 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 30px;
+      margin-top: 10px;
     }
     &-type {
       text-transform: uppercase;
       font-size: 17px;
       font-weight: $semi;
+    }
+  }
+  &__body {
+    &-name {
+      font-weight: $bold;
+      margin-bottom: 10px;
+      @include changeFontSizeOnChangeLayout(19px, 27px);
+      &-square {
+        display: block;
+      }
+      @include media-breakpoint-up($global-layout-change) {
+        margin-bottom: 5px;
+        &-square {
+          display: inline-block;
+        }
+      }
+    }
+    &-info {
+      @include media-breakpoint-up($global-layout-change) {
+        display: none;
+      }
+    }
+    &-address {
+      @include changeFontSizeOnChangeLayout(12px, 14px);
+    }
+  }
+  &__description {
+    @include changeFontSizeOnChangeLayout(10px, 14px);
+    p {
+      margin-bottom: 15px;
     }
   }
   &__plan {
