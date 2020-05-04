@@ -5653,6 +5653,22 @@ input[type="radio"].visually-hidden {
     height: 4px;
     background-color: #2EBCE9; }
 
+.page-product-content__header {
+  display: none; }
+  @media (min-width: 768px) {
+    .page-product-content__header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      margin-bottom: 30px; } }
+  .page-product-content__header-type {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600; }
+
 .page-product-content__plan-price {
   font-weight: 700;
   font-size: 27px;

@@ -1,4 +1,18 @@
 .page-product-content {
+  &__header {
+    display: none;
+    @include media-breakpoint-up($global-layout-change) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    &-type {
+      text-transform: uppercase;
+      font-size: 17px;
+      font-weight: $semi;
+    }
+  }
   &__plan {
     &-price {
       font-weight: $bold;
