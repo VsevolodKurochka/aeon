@@ -4968,7 +4968,7 @@ input[type="radio"].visually-hidden {
 
 .page-content {
   position: relative;
-  padding-top: 20px; }
+  padding-top: 42px; }
   @media (min-width: 768px) {
     .page-content {
       padding-top: 0;
@@ -5516,14 +5516,31 @@ input[type="radio"].visually-hidden {
   .contact-page__show-on-map:hover {
     color: #2EBCE9; }
 
-.page-product__return {
-  margin-bottom: 0; }
+@media (max-width: 767.98px) {
+  .page-product {
+    padding-top: 60px; } }
+
+@media (min-width: 768px) {
+  .page-product__return {
+    margin-bottom: 0; } }
 
 .page-product__title {
+  text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 15px;
-  margin-bottom: 5px; }
+  margin-bottom: 30px;
+  font-size: 12px; }
+  @media (min-width: 768px) {
+    .page-product__title {
+      font-size: 15px; } }
+  @media (max-width: 767.98px) {
+    .page-product__title {
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (min-width: 768px) {
+    .page-product__title {
+      margin-bottom: 5px; } }
 
 .page-product__favorite {
   display: -ms-flexbox;
@@ -5543,10 +5560,10 @@ input[type="radio"].visually-hidden {
       .page-product__favorite-text {
         font-size: 15px; } }
 
-.page-product-intro-container {
+.page-product-intro__container {
   position: relative; }
 
-.page-product-intro-row {
+.page-product-intro__row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
@@ -5555,27 +5572,33 @@ input[type="radio"].visually-hidden {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  margin-bottom: 25px; }
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .page-product-intro__row {
+      margin-bottom: 25px; } }
 
-.page-product-intro-category {
+.page-product-intro__category {
   transition: all 0.3s ease;
   color: #000;
   display: block;
   margin-bottom: 0;
   text-transform: uppercase;
   font-size: 12px; }
-  .page-product-intro-category:hover {
+  .page-product-intro__category:hover {
     color: #2EBCE9; }
 
-.page-product-intro-mark {
+.page-product-intro__mark {
   position: absolute;
-  top: 40px;
+  top: 27px;
   right: 15px;
   display: inline-block;
   font-size: 35px;
   color: #2EBCE9;
   cursor: pointer;
   z-index: 1; }
+  @media (min-width: 768px) {
+    .page-product-intro__mark {
+      top: 40px; } }
 
 @media (min-width: 768px) {
   .page-product-intro .page-product__favorite {

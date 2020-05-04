@@ -2,30 +2,36 @@ $arrow-offset: 15px;
 $arrow-desktop-offset: 45px;
 
 .page-product-intro {
-  &-container {
+  &__container {
     @include pos-r();
   }
-  &-row {
+  &__row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    @include media-breakpoint-up($global-layout-change) {
+      margin-bottom: 25px;
+    }
   }
-  &-category {
+  &__category {
     @include defaultLink();
     display: block;
     margin-bottom: 0;
     text-transform: uppercase;
     font-size: 12px;
   }
-  &-mark {
-    @include pos-a(40px, 15px);
+  &__mark {
+    @include pos-a(27px, 15px);
     display: inline-block;
     font-size: 35px;
     color: $brand-color;
     cursor: pointer;
     z-index: 1;
+    @include media-breakpoint-up($global-layout-change) {
+      top: 40px;
+    }
   }
   .page-product__favorite {
     @include media-breakpoint-up($global-layout-change) {
