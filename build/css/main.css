@@ -5653,5 +5653,25 @@ input[type="radio"].visually-hidden {
     height: 4px;
     background-color: #2EBCE9; }
 
+.page-product-content__plan-price {
+  font-weight: 700;
+  font-size: 27px;
+  margin-bottom: 25px; }
+  .page-product-content__plan-price sub {
+    bottom: auto; }
+
 .page-product-content__plan-image {
-  max-width: 100%; }
+  width: 140;
+  height: 80px;
+  max-width: 100%;
+  object-fit: cover;
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    .page-product-content__plan-image {
+      height: 165px; } }
+
+.page-product-content__plan-title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 25px; }

@@ -1,7 +1,28 @@
 .page-product-content {
   &__plan {
+    &-price {
+      font-weight: $bold;
+      font-size: 27px;
+      margin-bottom: 25px;
+      sub {
+        bottom: auto;
+      }
+    }
     &-image {
+      @include size(140, 80px);
       max-width: 100%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      @include media-breakpoint-up($global-layout-change) {
+        height: 165px;
+      }
+    }
+
+    &-title {
+      font-size: 14px;
+      font-weight: $semi;
+      text-transform: uppercase;
+      margin-bottom: 25px;
     }
   }
 }
