@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "ico-font";
-	src: url('../fonts/icofont/ico-font.eot?1588615422');
-	src: url('../fonts/icofont/ico-font.eot??1588615422#iefix') format('eot'),
-		url('../fonts/icofont/ico-font.woff2?1588615422') format('woff2'),
-		url('../fonts/icofont/ico-font.woff?1588615422') format('woff'),
-		url('../fonts/icofont/ico-font.ttf?1588615422') format('truetype'),
-		url('../fonts/icofont/ico-font.svg?1588615422#ico-font') format('svg');
+	src: url('../fonts/icofont/ico-font.eot?1588617975');
+	src: url('../fonts/icofont/ico-font.eot??1588617975#iefix') format('eot'),
+		url('../fonts/icofont/ico-font.woff2?1588617975') format('woff2'),
+		url('../fonts/icofont/ico-font.woff?1588617975') format('woff'),
+		url('../fonts/icofont/ico-font.ttf?1588617975') format('truetype'),
+		url('../fonts/icofont/ico-font.svg?1588617975#ico-font') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -39,35 +39,38 @@
 	@if $filename == bed {
 		$char: "\E001";
 	}
-	@if $filename == facebook {
+	@if $filename == download {
 		$char: "\E002";
 	}
-	@if $filename == heart {
+	@if $filename == facebook {
 		$char: "\E003";
 	}
-	@if $filename == house {
+	@if $filename == heart {
 		$char: "\E004";
 	}
-	@if $filename == instagram {
+	@if $filename == house {
 		$char: "\E005";
 	}
-	@if $filename == mark {
+	@if $filename == instagram {
 		$char: "\E006";
 	}
-	@if $filename == next {
+	@if $filename == mark {
 		$char: "\E007";
 	}
-	@if $filename == phone {
+	@if $filename == next {
 		$char: "\E008";
 	}
-	@if $filename == prev {
+	@if $filename == phone {
 		$char: "\E009";
 	}
-	@if $filename == star-fluid {
+	@if $filename == prev {
 		$char: "\E00A";
 	}
-	@if $filename == star {
+	@if $filename == star-fluid {
 		$char: "\E00B";
+	}
+	@if $filename == star {
+		$char: "\E00C";
 	}
 
 	@return $char;
@@ -86,6 +89,9 @@
 
 .icon-bed {
 	@include icon(bed);
+}
+.icon-download {
+	@include icon(download);
 }
 .icon-facebook {
 	@include icon(facebook);

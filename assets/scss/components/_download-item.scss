@@ -1,0 +1,12 @@
+.download-item {
+  display: flex;
+  align-items: center;
+  @include defaultLink();
+  text-transform: uppercase;
+  font-size: 12px;
+
+  &__icon {
+    margin-right: 15px;
+    font-size: 28px;
+  }
+}
