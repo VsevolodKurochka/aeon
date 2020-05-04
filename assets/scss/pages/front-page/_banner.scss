@@ -2,7 +2,7 @@
   text-align: center;
   color: $white;
   @include pad-y(200px, 40px);
-  @include bgi('../img/bg-front-start.jpg');
+  @include bgi('../img/bg-front-start.jpg', 0 bottom);
 
   @include media-breakpoint-up(md) {
     display: flex;
