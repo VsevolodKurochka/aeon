@@ -1,6 +1,5 @@
 .page-section {
-  margin-top: 45px;
-  margin-bottom: 45px;
+  @include margin-y(30px, 45px);
 
   @include media-breakpoint-up(lg) {
     margin-bottom: 90px;
@@ -9,8 +8,11 @@
   &__header {
     margin-bottom: 30px;
     text-align: center;
-    &_left {
-      text-align: left;
+    &_desktop-left {
+      text-align: center;
+      @include media-breakpoint-up($global-layout-change) {
+        text-align: left;
+      }
     }
     &-subtitle {
       @include changeFontSizeOnChangeLayout(17px, 19px);

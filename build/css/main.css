@@ -4924,7 +4924,7 @@ input[type="radio"].visually-hidden {
       margin-right: 15px; }
 
 .page-section {
-  margin-top: 45px;
+  margin-top: 30px;
   margin-bottom: 45px; }
   @media (min-width: 992px) {
     .page-section {
@@ -4932,8 +4932,11 @@ input[type="radio"].visually-hidden {
   .page-section__header {
     margin-bottom: 30px;
     text-align: center; }
-    .page-section__header_left {
-      text-align: left; }
+    .page-section__header_desktop-left {
+      text-align: center; }
+      @media (min-width: 768px) {
+        .page-section__header_desktop-left {
+          text-align: left; } }
     .page-section__header-subtitle {
       font-size: 17px;
       font-weight: 600; }
@@ -5722,9 +5725,29 @@ input[type="radio"].visually-hidden {
     .page-product-content__body-name-square {
       display: inline-block; } }
 
-@media (min-width: 768px) {
-  .page-product-content__body-info {
-    display: none; } }
+.page-product-content__body-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .page-product-content__body-info-type {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 0; }
+  .page-product-content__body-info-price {
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 0; }
+    .page-product-content__body-info-price sub {
+      bottom: auto; }
+  @media (min-width: 768px) {
+    .page-product-content__body-info {
+      display: none; } }
 
 .page-product-content__body-address {
   font-size: 12px; }
@@ -5851,8 +5874,11 @@ input[type="radio"].visually-hidden {
 .page-product-content__plan-title {
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   font-size: 11px; }
   @media (min-width: 768px) {
     .page-product-content__plan-title {
       font-size: 14px; } }
+  @media (min-width: 768px) {
+    .page-product-content__plan-title {
+      margin-bottom: 25px; } }
