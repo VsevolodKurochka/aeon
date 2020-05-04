@@ -48,7 +48,7 @@
 	<section class="page-section page-product-content">
 		<div class="container">
 			<div class="row page-product-content__row">
-				<div class="col-12 col-md-8">
+				<div class="col-12 col-md-8 page-product-content__column">
 					<div class="page-product-content__header">
 						<span class="page-product__favorite">
 							<span class="page-product__favorite-icon icon-star <!-- icon-star-fluid --> "></span>
@@ -68,6 +68,27 @@
 							Ул. Усачева, 14, ЦАО, район Хамовники. Метро Фрунзенская, Парк Культуры
 						</address>
 					</div>
+					<ul class="page-product-content__list">
+						<li class="page-product-content__list-item">
+							<div class="page-product-content__count">
+								<span class="page-product-content__count-count">4</span>
+								<span class="page-product-content__count-text">этаж</span>
+							</div>
+						</li>
+						<li class="page-product-content__list-item">
+							<div class="page-product-content__checked">
+								<div class="page-product-content__checked-indicator"></div>
+								<span class="page-product-content__checked-text">отделка</span>
+							</div>
+						</li>
+						<li class="page-product-content__list-item">
+							<div class="page-product-content__checked">
+								<div class="page-product-content__checked-indicator"></div>
+								<span class="page-product-content__checked-text">мебель</span>
+							</div>
+						</li>
+						<li class="page-product-content__list-item">ПАРКИНГ: подземный</li>
+					</ul>
 					<div class="page-product-content__description">
 						<p>Предлагается к продаже 3-комн. квартира 89,9 м2 на 12 этаже в элитном ЖК "Садовые кварталы", расположенном в районе Хамовники. Комплекс расположен на благоустроенной огороженной територии 5 Га, имеющей все необходимое для комфортного проживания. Пространство свободно от автомобилей, детские и спортивные площадки, скверы. В комплексе предусмотрен детский сад, медцентр, банк, пекарни, кафе, салон красоты, супермаркет, фитнес центр с тремя бассейнами и много других полезных объектов инфраструктуры.</p>
 						<p>Автор архитектурного проекта - Никита Бирюков. Здания комплекса отделаны светлым юрским мрамором, украшены резьбой.</p>
@@ -91,10 +112,12 @@
 	</section>
 
 	<section class="page-section">
-		<header class="page-section__header">
-			<p class="page-section__header-title page-section__header-title_uppercase">ДРУГИЕ КВАРТИРЫ В ЖК «САДОВЫЕ КВАРТАЛЫ»</p>
-		</header>
-		<div class="container page-section__content">
+		<div class="container">
+			<header class="page-section__header page-section__header_left">
+				<p class="page-section__header-subtitle page-section__header-subtitle_uppercase">
+					ДРУГИЕ КВАРТИРЫ В ЖК «САДОВЫЕ КВАРТАЛЫ»
+				</p>
+			</header>
 			<div class="js-product-slider product-grid product-slider">
 				@@loop('template/components/product.html', "products-list-commercial.json")
 			</div>

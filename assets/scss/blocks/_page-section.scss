@@ -12,6 +12,13 @@
     &_left {
       text-align: left;
     }
+    &-subtitle {
+      @include changeFontSizeOnChangeLayout(17px, 19px);
+      font-weight: $semi;
+      &_uppercase {
+        text-transform: uppercase;
+      }
+    }
     &-title {
       font-size: 19px;
       font-weight: $semi;

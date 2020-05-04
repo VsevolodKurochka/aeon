@@ -1,9 +1,9 @@
 .download-item {
+  @include defaultLink();
+  @include changeFontSizeOnChangeLayout(10px, 12px);
   display: flex;
   align-items: center;
-  @include defaultLink();
   text-transform: uppercase;
-  font-size: 12px;
 
   &__icon {
     margin-right: 15px;

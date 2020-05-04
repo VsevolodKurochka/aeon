@@ -116,3 +116,30 @@
     font-weight: $bold;
   }
 }
+
+@mixin countItem() {
+  display: flex;
+  align-items: center;
+
+  &-count {
+    @include size(22px);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $black;
+    border-radius: 100%;
+    margin-right: 5px;
+    font-weight: $semi;
+    font-size: 12px;
+    @include media-breakpoint-up($global-layout-change) {
+      @include size(30px);
+      font-size: 15px;
+      margin-right: 7px;
+    }
+  }
+
+  &-text {
+    @include changeFontSizeOnChangeLayout(10px, 12px);
+    text-transform: uppercase;
+  }
+}
