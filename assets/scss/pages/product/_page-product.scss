@@ -2,11 +2,50 @@ $arrow-offset: 15px;
 $arrow-desktop-offset: 45px;
 
 .page-product {
+  &__return {
+    margin-bottom: 0;
+  }
   &__title {
     font-weight: $bold;
     text-transform: uppercase;
     font-size: 15px;
     margin-bottom: 5px;
+  }
+  &__intro {
+    &-container {
+      @include pos-r();
+    }
+    &-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    &-category {
+      @include defaultLink();
+      display: block;
+      margin-bottom: 0;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    &-mark {
+      @include pos-a(40px, 15px);
+      display: inline-block;
+      font-size: 35px;
+      color: $brand-color;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .page-product__favorite {
+      @include media-breakpoint-up($global-layout-change) {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+  &__favorite {
+    @include productFavorite();
   }
   &__slider {
     img {

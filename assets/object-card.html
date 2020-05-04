@@ -20,13 +20,20 @@
 	</div>
 
 	@@include('template/page-return.html', {
-		"componentClass": "",
+		"componentClass": "page-product__return",
 		"item": "возврат к результатам поиска"
 	})
 
 	<section class="page-product__intro">
-		<div class="page-product__intro-header">
-			<a href="" class="page-product__intro-category">Эксклюзив</a>
+		<div class="container page-product__intro-container">
+			<div class="page-product__intro-row">
+				<span class="page-product__favorite">
+					<span class="page-product__favorite-icon icon-star <!-- icon-star-fluid --> "></span>
+					<span class="page-product__favorite-text">fl 234</span>
+				</span>
+				<a href="" class="page-product__intro-category">Эксклюзив</a>
+			</div>
+			<span class="page-product__intro-mark icon-mark"></span>
 		</div>
 		<div class="js-product-page-slider page-product__slider">
 			<img src="img/product-page-slider.jpg" alt="slider 1">

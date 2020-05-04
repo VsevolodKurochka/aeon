@@ -1,10 +1,3 @@
-@mixin productItemFontSize($default, $layoutChange) {
-  font-size: $default;
-  @include media-breakpoint-up($global-layout-change) {
-    font-size: $layoutChange;
-  }
-}
-
 .product-item {
   outline: none;
   &__inner {
@@ -17,24 +10,11 @@
     margin-bottom: 20px;
   }
   &__favorite {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    &-icon {
-      margin-right: 10px;
-      @include transition();
-    }
-    &:hover &-icon {
-      color: $brand-color;
-    }
-    &-text {
-      @include productItemFontSize(10px, 15px);
-      font-weight: $bold;
-    }
+    @include productFavorite();
   }
   &__tag {
     @include defaultLink();
-    @include productItemFontSize(10px, 12px);
+    @include changeFontSizeOnChangeLayout(10px, 12px);
     text-transform: uppercase;
   }
   &__image {
@@ -49,23 +29,23 @@
     text-transform: uppercase;
   }
   &__category {
-    @include productItemFontSize(15px, 12px);
+    @include changeFontSizeOnChangeLayout(15px, 12px);
     margin-bottom: 2px;
   }
   &__type {
-    @include productItemFontSize(10px, 12px);
+    @include changeFontSizeOnChangeLayout(10px, 12px);
     font-weight: $semi;
     margin-bottom: 0;
   }
   &__coordinates {
     margin-bottom: 15px;
     &-street {
-      @include productItemFontSize(12px, 15px);
+      @include changeFontSizeOnChangeLayout(12px, 15px);
       font-weight: $semi;
       margin-bottom: 0;
     }
     &-area {
-      @include productItemFontSize(11px, 14px);
+      @include changeFontSizeOnChangeLayout(11px, 14px);
       margin-bottom: 0;
     }
   }
@@ -73,10 +53,10 @@
     display: flex;
     align-items: center;
     &-item {
-      @include productItemFontSize(22px, 27px);
+      @include changeFontSizeOnChangeLayout(22px, 27px);
       font-weight: $bold;
       sub {
-        @include productItemFontSize(10px, 12px);
+        @include changeFontSizeOnChangeLayout(10px, 12px);
         bottom: auto;
       }
     }
@@ -106,7 +86,7 @@
         }
       }
       &-text {
-        @include productItemFontSize(10px, 11px);
+        @include changeFontSizeOnChangeLayout(10px, 11px);
         text-transform: uppercase;
       }
     }
