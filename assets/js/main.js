@@ -410,4 +410,23 @@ $(document).ready(function() {
 			}
 		]
 	});
+
+
+	$('.js-product-page-slider').slick({
+		dots: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<button type="button" class="slick-prev"><span class="icon-prev"></span></button>',
+		nextArrow: '<button type="button" class="slick-next"><span class="icon-next"></span></button>',
+		responsive: [
+			{
+				breakpoint: gridBreakpoints.sm,
+				settings: {
+					dots: false
+				}
+			}
+		]
+	});
 });
