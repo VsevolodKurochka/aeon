@@ -1,11 +1,15 @@
 .front-page-header {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  min-height: 100vh;
-  padding-bottom: 30px;
+  @include pad-y(190px, 30px);
   color: $white;
-  @include bgi('../img/bg-front-page.jpg');
+  @include bgi('../img/bg-front-page.jpg', center 0);
+
+  @include media-breakpoint-up($global-layout-change) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+    padding-bottom: 45px;
+  }
 
   &__row {
     margin-bottom: 120px;
@@ -22,18 +26,53 @@
   &__select {
     display: block;
     margin-bottom: 0;
-
+    .custom-select {
+      &__title {
+        text-align: center;
+        @include media-breakpoint-up($global-layout-change) {
+          text-align: left;
+        }
+      }
+    }
     .select2 {
       display: block;
     }
   }
 
+  &__links-buy {
+    display: none;
+    margin-bottom: 30px;
+    @include media-breakpoint-up($global-layout-change) {
+      display: block;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__commercial {
+    display: none;
+    @include media-breakpoint-up($global-layout-change) {
+      display: block;
+    }
+  }
+
   &__find {
-    margin-bottom: 10px;
+    @include margin-y(30px, 10px);
     font-size: 12px;
-    text-align: right;
+    text-align: center;
     &-number {
       color: $brand-color;
+    }
+    &_hide-mobile {
+      display: none;
+      @include media-breakpoint-up($global-layout-change) {
+        display: block;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      text-align: right;
+      margin-bottom: 0;
     }
   }
 }

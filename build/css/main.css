@@ -5969,17 +5969,21 @@ input[type="radio"].visually-hidden {
       color: #2EBCE9; }
 
 .front-page-header {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: end;
-      align-items: flex-end;
-  min-height: 100vh;
+  padding-top: 190px;
   padding-bottom: 30px;
   color: #fff;
-  background: url("../img/bg-front-page.jpg") 0 0 no-repeat;
+  background: url("../img/bg-front-page.jpg") center 0 no-repeat;
   background-size: cover; }
+  @media (min-width: 768px) {
+    .front-page-header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: end;
+          align-items: flex-end;
+      min-height: 100vh;
+      padding-bottom: 45px; } }
   .front-page-header__row {
     margin-bottom: 120px; }
     @media (min-width: 768px) {
@@ -5992,14 +5996,43 @@ input[type="radio"].visually-hidden {
   .front-page-header__select {
     display: block;
     margin-bottom: 0; }
+    .front-page-header__select .custom-select__title {
+      text-align: center; }
+      @media (min-width: 768px) {
+        .front-page-header__select .custom-select__title {
+          text-align: left; } }
     .front-page-header__select .select2 {
       display: block; }
+  .front-page-header__links-buy {
+    display: none;
+    margin-bottom: 30px; }
+    @media (min-width: 768px) {
+      .front-page-header__links-buy {
+        display: block; } }
+    @media (min-width: 992px) {
+      .front-page-header__links-buy {
+        margin-bottom: 0; } }
+  .front-page-header__commercial {
+    display: none; }
+    @media (min-width: 768px) {
+      .front-page-header__commercial {
+        display: block; } }
   .front-page-header__find {
+    margin-top: 30px;
     margin-bottom: 10px;
     font-size: 12px;
-    text-align: right; }
+    text-align: center; }
     .front-page-header__find-number {
       color: #2EBCE9; }
+    .front-page-header__find_hide-mobile {
+      display: none; }
+      @media (min-width: 768px) {
+        .front-page-header__find_hide-mobile {
+          display: block; } }
+    @media (min-width: 992px) {
+      .front-page-header__find {
+        text-align: right;
+        margin-bottom: 0; } }
 
 .front-page-banner {
   text-align: center;
