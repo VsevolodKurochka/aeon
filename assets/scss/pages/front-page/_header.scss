@@ -70,6 +70,12 @@
         display: block;
       }
     }
+    &_footer {
+      display: block;
+      @include media-breakpoint-up($global-layout-change) {
+        display: none;
+      }
+    }
     @include media-breakpoint-up(lg) {
       text-align: right;
       margin-bottom: 0;

@@ -2,7 +2,7 @@
   @include margin-y(30px, 45px);
 
   @include media-breakpoint-up(lg) {
-    margin-bottom: 90px;
+    @include margin-y(45px, 90px);
   }
 
   &__header {

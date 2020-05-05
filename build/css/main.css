@@ -5044,7 +5044,7 @@ input[type="radio"].visually-hidden {
 
 .custom-select .select2-container--default .select2-selection--single .select2-selection__arrow {
   right: 10px;
-  top: 15px;
+  top: 18px;
   width: auto;
   height: auto; }
 
@@ -5536,6 +5536,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 45px; }
   @media (min-width: 992px) {
     .page-section {
+      margin-top: 45px;
       margin-bottom: 90px; } }
   .page-section__header {
     margin-bottom: 30px;
@@ -6029,6 +6030,11 @@ input[type="radio"].visually-hidden {
       @media (min-width: 768px) {
         .front-page-header__find_hide-mobile {
           display: block; } }
+    .front-page-header__find_footer {
+      display: block; }
+      @media (min-width: 768px) {
+        .front-page-header__find_footer {
+          display: none; } }
     @media (min-width: 992px) {
       .front-page-header__find {
         text-align: right;
