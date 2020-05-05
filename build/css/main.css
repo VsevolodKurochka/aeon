@@ -5290,6 +5290,21 @@ input[type="radio"].visually-hidden {
     .product-grid .product-item__tags-item:not(:last-child) {
       margin-right: 15px; } }
 
+.product-grid:not(.product-slider) {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .product-grid:not(.product-slider) .product-item {
+    -ms-flex: 0 0 33.3333%;
+        flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 45px; }
+
 .product-slider .product-item__inner {
   padding-left: 15px;
   padding-right: 15px; }

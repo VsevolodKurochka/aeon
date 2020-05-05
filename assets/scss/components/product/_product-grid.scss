@@ -17,4 +17,14 @@
       }
     }
   }
+  &:not(.product-slider) {
+    display: flex;
+    flex-wrap: wrap;
+    @include margin-x(-15px);
+    .product-item {
+      @include createColumn(33.3333%);
+      @include pad-x(15px);
+      margin-bottom: 45px;
+    }
+  }
 }

@@ -1,0 +1,40 @@
+@@include('template/head.html', {
+	"pagetitle": "Жилая недвижимость",
+	"bodyclass": ""
+})
+
+@@include('template/page-navigation.html',{
+	"active_item": ""
+})
+
+<div class="page-content page-category">
+	@@include('template/page-header.html', {
+		"componentClass": "page-header_static"
+	})
+	<header class="page-category__header">
+		<p class="page-category__header-title"></p>
+		<div class="page-category__header-body">
+
+		</div>
+	</header>
+	<section class="page-section">
+		<div class="container">
+			<div class="product-grid">
+				@@loop('template/components/product.html', "products-list-commercial.json")
+			</div>
+			<div class="page-section__content-footer">
+				<a href="" class="btn btn_border-brand-black">Далее</a>
+			</div>
+		</div>
+	</section>
+</div>
+
+@@include('template/page-footer.html')
+@@include('template/popups.html')
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/plugins.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+</html>
