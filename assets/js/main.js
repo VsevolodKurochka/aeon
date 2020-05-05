@@ -428,9 +428,11 @@ $(document).ready(function() {
 		]
 	});
 
-	$('.js-example-basic-single').select2({
+	$('.js-custom-select').select2({
 		minimumResultsForSearch: -1,
-		containerCssClass: "custom-container",
-		dropdownCssClass: "custom-dropdown",
+		dropdownAutoWidth : true,
+		width: 'auto',
+		containerCssClass: "custom-select-container",
+		dropdownCssClass: "custom-select-dropdown"
 	});
 });

@@ -313,7 +313,7 @@
 </header>
  	<section class="front-page-header">
 		<div class="container front-page-header__content">
-			<div class="row">
+			<div class="row front-page-header__row">
 				<div class="col-3">
 					<ul class="links-buy links-buy_white">
     <li>
@@ -324,19 +324,35 @@
     </li>
 </ul>
 				</div>
-				<div class="col-3">
-					<select class="js-example-basic-single" name="state">
-						<option value="AL">Alabama</option>
-						<option value="WY">Wyoming</option>
-					</select>
-					<select class="js-example-basic-single" name="state">
-						<option value="AL">Alabama</option>
-						<option value="WY">Wyoming</option>
-					</select>
+				<div class="col-6">
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<label class="custom-select front-page-header__select">
+								<span class="custom-select__title">ЖИЛАЯ<br>НЕДВИЖИМОСТЬ</span>
+								<select class="js-custom-select" name="state">
+									<option value="AL">Alabama</option>
+									<option value="WY">Wyoming</option>
+								</select>
+							</label>
+						</div>
+						<div class="col-12 col-md-6">
+							<label class="custom-select custom-select_border-white front-page-header__select">
+								<span class="custom-select__title">Коммерческая<br>НЕДВИЖИМОСТЬ</span>
+								<select class="js-custom-select" name="state">
+									<option value="AL">Alabama</option>
+									<option value="WY">Wyoming</option>
+								</select>
+							</label>
+						</div>
+					</div>
 				</div>
-				<div class="col-3"></div>
+				<div class="col-3">
+					<p class="front-page-header__find">
+						Будет найдено: <span class="front-page-header__find-number">476</span> КВАРТИР
+					</p>
+				</div>
 			</div>
-			<div class="front-page-header__content-footer">
+			<div class="front-page-header__footer">
 				<button class="btn btn_border-brand-white">ПОКАЗАТЬ ПРЕДЛОЖЕНИЯ</button>
 			</div>
 		</div>

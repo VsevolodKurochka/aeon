@@ -4221,12 +4221,12 @@ input[type="radio"].visually-hidden {
 
 @font-face {
   font-family: "ico-font";
-  src: url("../fonts/icofont/ico-font.eot?1588617975");
-  src: url("../fonts/icofont/ico-font.eot??1588617975#iefix") format("eot"), url("../fonts/icofont/ico-font.woff2?1588617975") format("woff2"), url("../fonts/icofont/ico-font.woff?1588617975") format("woff"), url("../fonts/icofont/ico-font.ttf?1588617975") format("truetype"), url("../fonts/icofont/ico-font.svg?1588617975#ico-font") format("svg");
+  src: url("../fonts/icofont/ico-font.eot?1588698639");
+  src: url("../fonts/icofont/ico-font.eot??1588698639#iefix") format("eot"), url("../fonts/icofont/ico-font.woff2?1588698639") format("woff2"), url("../fonts/icofont/ico-font.woff?1588698639") format("woff"), url("../fonts/icofont/ico-font.ttf?1588698639") format("truetype"), url("../fonts/icofont/ico-font.svg?1588698639#ico-font") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-.icon-bed:before, .icon-download:before, .icon-facebook:before, .icon-heart:before, .icon-house:before, .icon-instagram:before, .icon-mark:before, .icon-next:before, .icon-phone:before, .icon-prev:before, .icon-star-fluid:before, .icon-star:before {
+.icon-arrow-select:before, .icon-bed:before, .icon-download:before, .icon-facebook:before, .icon-heart:before, .icon-house:before, .icon-instagram:before, .icon-mark:before, .icon-next:before, .icon-phone:before, .icon-prev:before, .icon-star-fluid:before, .icon-star:before, .custom-select .select2-selection__arrow:before {
   font-family: "ico-font";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -4236,45 +4236,48 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   text-transform: none;
   line-height: 1; }
-  .icon-bed:before, .icon-download:before, .icon-facebook:before, .icon-heart:before, .icon-house:before, .icon-instagram:before, .icon-mark:before, .icon-next:before, .icon-phone:before, .icon-prev:before, .icon-star-fluid:before, .icon-star:before {
+  .icon-arrow-select:before, .icon-bed:before, .icon-download:before, .icon-facebook:before, .icon-heart:before, .icon-house:before, .icon-instagram:before, .icon-mark:before, .icon-next:before, .icon-phone:before, .icon-prev:before, .icon-star-fluid:before, .icon-star:before, .custom-select .select2-selection__arrow:before {
     display: block;
     line-height: 1; }
 
-.icon-bed:before {
+.icon-arrow-select:before {
   content: ""; }
 
-.icon-download:before {
+.icon-bed:before {
   content: ""; }
 
-.icon-facebook:before {
+.icon-download:before {
   content: ""; }
 
-.icon-heart:before {
+.icon-facebook:before {
   content: ""; }
 
-.icon-house:before {
+.icon-heart:before {
   content: ""; }
 
-.icon-instagram:before {
+.icon-house:before {
   content: ""; }
 
-.icon-mark:before {
+.icon-instagram:before {
   content: ""; }
 
-.icon-next:before {
+.icon-mark:before {
   content: ""; }
 
-.icon-phone:before {
+.icon-next:before {
   content: ""; }
 
-.icon-prev:before {
+.icon-phone:before {
   content: ""; }
 
-.icon-star-fluid:before {
+.icon-prev:before {
   content: ""; }
 
-.icon-star:before {
+.icon-star-fluid:before {
   content: ""; }
+
+.icon-star:before {
+  content: ""; }
 
 .slick-slider {
   position: relative;
@@ -5013,6 +5016,68 @@ input[type="radio"].visually-hidden {
   .download-item__icon {
     margin-right: 15px;
     font-size: 28px; }
+
+.custom-select__title {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 10px; }
+
+.custom-select .select2-selection__rendered {
+  text-transform: uppercase;
+  font-size: 12px; }
+
+.custom-select .select2-selection--single {
+  border-radius: 0;
+  border: 2px solid transparent;
+  height: auto;
+  padding: 7px; }
+  .custom-select .select2-selection--single b {
+    display: none; }
+
+.custom-select .select2-selection__arrow {
+  color: #000;
+  font-size: 12px; }
+  .custom-select .select2-selection__arrow:before {
+    content: ""; }
+
+.custom-select .select2-container--default .select2-selection--single .select2-selection__arrow {
+  right: 10px;
+  top: 15px;
+  width: auto;
+  height: auto; }
+
+.custom-select_border-white .select2-container--default .select2-selection--single {
+  background-color: transparent;
+  border: 2px solid #fff; }
+
+.custom-select_border-white .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #fff; }
+
+.custom-select_border-white .select2-selection__arrow {
+  color: #fff; }
+
+.custom-select .select2-container--open .select2-selection--single .select2-selection__rendered {
+  color: #2EBCE9; }
+
+.custom-select .select2-container--open .select2-selection--single .select2-selection__arrow {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  color: #2EBCE9; }
+
+.select2-dropdown.custom-select-dropdown {
+  border: none;
+  border-radius: 0; }
+  .select2-dropdown.custom-select-dropdown .select2-results__option {
+    text-transform: uppercase;
+    padding: 12px;
+    font-size: 12px; }
+  .select2-dropdown.custom-select-dropdown .select2-results {
+    border-bottom: 1px solid #F5F5F5; }
+  .select2-dropdown.custom-select-dropdown .select2-results__option--highlighted[aria-selected] {
+    background-color: #F5F5F5;
+    color: #000; }
 
 .product-item {
   outline: none; }
@@ -5912,8 +5977,29 @@ input[type="radio"].visually-hidden {
       align-items: flex-end;
   min-height: 100vh;
   padding-bottom: 30px;
+  color: #fff;
   background: url("../img/bg-front-page.jpg") 0 0 no-repeat;
   background-size: cover; }
+  .front-page-header__row {
+    margin-bottom: 120px; }
+    @media (min-width: 768px) {
+      .front-page-header__row {
+        margin-bottom: 45px;
+        -ms-flex-align: end;
+            align-items: flex-end; } }
+  .front-page-header__footer {
+    text-align: center; }
+  .front-page-header__select {
+    display: block;
+    margin-bottom: 0; }
+    .front-page-header__select .select2 {
+      display: block; }
+  .front-page-header__find {
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: right; }
+    .front-page-header__find-number {
+      color: #2EBCE9; }
 
 .front-page-banner {
   text-align: center;

@@ -4,5 +4,36 @@
   align-items: flex-end;
   min-height: 100vh;
   padding-bottom: 30px;
+  color: $white;
   @include bgi('../img/bg-front-page.jpg');
+
+  &__row {
+    margin-bottom: 120px;
+    @include media-breakpoint-up($global-layout-change) {
+      margin-bottom: 45px;
+      align-items: flex-end;
+    }
+  }
+
+  &__footer {
+    text-align: center;
+  }
+
+  &__select {
+    display: block;
+    margin-bottom: 0;
+
+    .select2 {
+      display: block;
+    }
+  }
+
+  &__find {
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: right;
+    &-number {
+      color: $brand-color;
+    }
+  }
 }
