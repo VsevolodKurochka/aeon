@@ -4960,6 +4960,12 @@ input[type="radio"].visually-hidden {
         visibility: visible;
         -webkit-transform: scaleX(1);
                 transform: scaleX(1); }
+  .links-buy_white li:not(:last-child):before {
+    background-color: #fff; }
+  .links-buy_white a {
+    color: #fff; }
+    .links-buy_white a:hover {
+      color: #2EBCE9; }
 
 .social {
   margin-bottom: 0;

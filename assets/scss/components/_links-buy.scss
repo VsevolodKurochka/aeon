@@ -31,4 +31,19 @@
       }
     }
   }
+  &_white {
+    li {
+      &:not(:last-child) {
+        &:before {
+          background-color: $white;
+        }
+      }
+    }
+    a {
+      color: $white;
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
 }
